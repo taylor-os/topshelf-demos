@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Mound Vehicle Repair — Honest Auto Repair, Brakes, A/C, Diagnostics &amp; Inspections | Flower Mound, TX</title>
+<meta name="description" content="Independent, honest auto repair in Flower Mound, TX. Engine repair, brakes, A/C & heating, diagnostics, oil changes & state inspections — with fair prices and same-day service on many jobs. Rated 4.8★ across 44 Google reviews. Request service online or call (972) 539-8668.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --steel:#123E5C; --steel-2:#1F5C8A; --steel-3:#2C74AA; --steel-soft:#E8F0F7;
+  --accent:#EAA032; --accent-deep:#CE8014;
+  --bg:#F4F7FA; --paper:#fff; --ink:#152736; --ink-2:#4C5E70; --muted:#8393A4; --hair:#E2EAF2;
+  --sans:"Barlow",system-ui,sans-serif; --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink-2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{color:var(--ink);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem)}
+.eyebrow{font-weight:700;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-2);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.9rem;padding:1rem 1.7rem;border-radius:12px;cursor:pointer;transition:all .28s var(--ease);border:2px solid transparent}
+.btn-primary{background:var(--accent);color:#3A2604}
+.btn-primary:hover{background:var(--accent-deep);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(206,128,20,.6)}
+.btn-steel{background:var(--steel);color:#fff}
+.btn-steel:hover{background:var(--steel-2);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--steel-2);color:var(--steel-2)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.32)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:56ch;margin-bottom:3rem}.head .eyebrow{margin-bottom:1rem}.head p{margin-top:1rem}
+
+/* top bar */
+.topbar{background:var(--steel);color:#BFD3E4;font-size:.82rem;font-weight:500}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar a{color:#fff;font-weight:700}
+.topbar .hrs{color:#93AAC1}
+
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:.65rem;font-weight:800;font-size:1.32rem;color:var(--steel);letter-spacing:-.02em;line-height:1}
+.brand .m{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--steel-3),var(--steel));display:grid;place-items:center;color:#fff;flex:0 0 auto}
+.brand small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-deep)}
+.nav-links{display:flex;gap:1.8rem;align-items:center}
+.nav-links a{font-weight:600;font-size:.92rem;color:var(--ink-2);transition:.2s}.nav-links a:hover{color:var(--steel-2)}
+.nav-cta{background:var(--accent);color:#3A2604!important;padding:.62rem 1.2rem;border-radius:10px;font-weight:700;font-size:.86rem}
+.nav-cta:hover{background:var(--accent-deep);color:#fff!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:2.5px;background:var(--steel);border-radius:2px}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#123E5C right center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,34,52,.97) 0%,rgba(11,34,52,.92) 42%,rgba(11,34,52,.55) 62%,rgba(11,34,52,.15) 100%)}
+.hero-inner{position:relative;z-index:2;padding:clamp(3.5rem,7vw,6.5rem) 0}
+.hero .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.chip{font-size:.72rem;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#DBE7F1;padding:.4rem .8rem;border-radius:100px}
+.hero h1{color:#fff;font-size:clamp(2.5rem,5.6vw,4.3rem);max-width:16ch;margin-bottom:1.2rem}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.22rem);max-width:48ch;color:#C4D5E5;margin-bottom:2rem}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-rating{display:flex;align-items:center;gap:.7rem;margin-top:2rem;color:#DBE7F1;font-size:.9rem}
+.hero-rating b{font-size:1.5rem;color:#fff;font-weight:800}.hero-rating .stars{color:var(--accent);letter-spacing:.1em}
+
+/* trust */
+.trust{background:var(--paper);border-bottom:1px solid var(--hair)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.2rem 0}
+.trust div{text-align:center}
+.trust b{font-size:2rem;font-weight:800;color:var(--steel);display:block;line-height:1}
+.trust small{font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:2.1rem 1.8rem;transition:.3s}
+.svc:hover{transform:translateY(-5px);box-shadow:0 22px 44px -24px rgba(18,62,92,.4);border-color:var(--steel-3)}
+.svc .ic{width:52px;height:52px;border-radius:13px;background:var(--steel-soft);color:var(--steel-2);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc h3{font-size:1.28rem;margin-bottom:.4rem;font-weight:700}
+.svc p{font-size:.92rem;color:var(--ink-2)}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.why-panel{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background:linear-gradient(150deg,var(--steel) 0%,var(--steel-2) 60%,var(--steel-3) 100%);box-shadow:0 24px 50px -28px rgba(18,62,92,.5);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(1.8rem,4vw,2.6rem)}
+.why-panel::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 80% 15%,rgba(234,160,50,.28),transparent 45%),
+  repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 22px)}
+.why-panel .qmark{position:absolute;top:clamp(1.2rem,3vw,2rem);left:clamp(1.4rem,3vw,2.2rem);font-size:clamp(4rem,9vw,6.5rem);font-weight:800;line-height:.7;color:var(--accent);opacity:.9}
+.why-panel .qt{position:relative;font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:700;line-height:1.3;color:#fff;margin-bottom:.9rem}
+.why-panel .qc{position:relative;font-size:.88rem;font-weight:600;color:#C4D5E5;letter-spacing:.02em}
+.why-panel .qstars{color:var(--accent);letter-spacing:.12em;margin-bottom:.6rem;position:relative}
+.split ul{list-style:none;margin-top:1.4rem}
+.split li{padding:.75rem 0;border-top:1px solid var(--hair);display:flex;gap:.8rem;align-items:flex-start;color:var(--ink);font-weight:500}
+.split li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:var(--steel-soft);color:var(--steel-2);border-radius:50%;font-size:.8rem;font-weight:800;flex:0 0 auto;margin-top:.1rem}
+
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.step{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:2rem 1.7rem;position:relative}
+.step .n{width:40px;height:40px;border-radius:11px;background:var(--steel);color:#fff;font-weight:800;display:grid;place-items:center;margin-bottom:1rem}
+.step h3{font-size:1.14rem;margin-bottom:.35rem;font-weight:700}
+.step p{font-size:.9rem;color:var(--ink-2)}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.rev{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:1.9rem}
+.rev .stars{color:var(--accent);letter-spacing:.1em;margin-bottom:.8rem}
+.rev p{color:var(--ink);font-weight:500;font-size:1.02rem;line-height:1.5;margin-bottom:.9rem}
+.rev cite{font-style:normal;font-size:.82rem;font-weight:700;color:var(--steel-2)}
+
+/* band */
+.band{background:linear-gradient(120deg,var(--steel),var(--steel-2));color:#fff;text-align:center;border-radius:26px;padding:clamp(2.8rem,5vw,4.5rem);position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 20%,rgba(234,160,50,.2),transparent 40%)}
+.band>*{position:relative}
+.band h2{color:#fff}.band p{color:#C4D5E5;max-width:46ch;margin:1rem auto 2rem}
+
+footer{background:var(--steel);color:#93AAC1;padding:3rem 0 2rem;margin-top:clamp(3rem,6vw,5rem)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot h4{color:#fff;margin-bottom:.7rem}
+.foot .brand{color:#fff;margin-bottom:.6rem}
+.foot a{display:block;padding:.18rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--accent)}
+.foot .big{color:#fff;font-size:1.4rem;font-weight:800}
+.foot small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--accent)}
+
+@media(max-width:900px){
+  .topbar .hrs{display:none}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--paper);flex-direction:column;justify-content:center;gap:1.7rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.12)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .svc-grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.why-panel{order:-1}
+  .steps{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>🔧 Independent, honest auto repair in Flower Mound, TX</span>
+    <span class="hrs">Same-day service on many jobs · <a href="tel:9725398668">(972) 539-8668</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <span class="m"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/></svg></span>
+      <span>Flower Mound Vehicle Repair<small>Honest Auto Repair</small></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#how">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#request" class="nav-cta">Request Service</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <div class="badges">
+      <span class="chip">Locally Owned</span>
+      <span class="chip">Fair, Up-Front Pricing</span>
+      <span class="chip">All Makes &amp; Models</span>
+      <span class="chip">State Inspections</span>
+    </div>
+    <h1>Honest auto repair you can <span>trust.</span></h1>
+    <p class="lead">Independent, family-run repair in Flower Mound — engine, brakes, A/C, diagnostics and inspections done right, at a fair price, with same-day service on many jobs. No pressure, no surprises.</p>
+    <div class="hero-cta">
+      <a href="#request" class="btn btn-primary">Request Service</a>
+      <a href="tel:9725398668" class="btn btn-ghost">Call (972) 539-8668</a>
+    </div>
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span><b>4.8</b><span>Rated across <b style="font-size:1rem">44</b> Google reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.8★</b><small>44 Google Reviews</small></div>
+    <div class="reveal"><b>Same-Day</b><small>Service on Many Jobs</small></div>
+    <div class="reveal"><b>All</b><small>Makes &amp; Models</small></div>
+    <div class="reveal"><b>$0</b><small>Surprise Fees</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Everything your vehicle needs, under one honest roof.</h2>
+      <p>From a quick oil change to major engine work, our shop handles it all — with straight talk about what your vehicle actually needs and what it doesn't.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2-4h6l2 4h3"/><rect x="3" y="12" width="18" height="7" rx="2"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></svg></div><h3>Engine Repair</h3><p>From check-engine lights to major repairs — accurate diagnosis and quality work that keeps your car running strong for the long haul.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg></div><h3>Brake Service</h3><p>Squealing or soft pedal? We inspect, repair and replace pads, rotors and lines so you stop safely, every single time.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4 7l8 5 8-5M4 17l8-5 8 5"/></svg></div><h3>A/C &amp; Heating</h3><p>Blowing warm in a Texas summer? We recharge, diagnose and repair A/C and heating so your cabin stays comfortable year-round.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><h3>Computer Diagnostics</h3><p>Modern scan tools pinpoint the real problem the first time — so you pay to fix what's actually wrong, not to guess.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5L12 15.5 7 18.2l1-5.5-4-3.9 5.5-.8z"/></svg></div><h3>Oil Changes &amp; Maintenance</h3><p>Fast oil changes, fluids, filters and scheduled maintenance that protect your investment and prevent costly breakdowns.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><path d="M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/></svg></div><h3>State Inspections</h3><p>Quick, official Texas state inspections plus general repair and maintenance — get in, get done, get back on the road.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap split">
+    <div class="why-panel reveal">
+      <span class="qmark">&ldquo;</span>
+      <div class="qstars">★★★★★</div>
+      <p class="qt">Unbelievably honest — they've got a customer for life.</p>
+      <span class="qc">— Pradeep, Google Review</span>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why Drivers Choose Us</span>
+      <h2 style="margin:1rem 0">The independent shop that treats you fair.</h2>
+      <p>Big-box chains push add-ons and upsells. We're a locally owned shop that earns 4.8 stars the honest way — by telling you the truth about your car and charging a fair price for great work, on jobs great and small.</p>
+      <ul>
+        <li>Fair, up-front pricing — <b style="color:var(--ink)">no upsells and no surprises</b>, ever.</li>
+        <li>Honest advice: we tell you what you need now, and what can wait.</li>
+        <li>Same-day service on many repairs — most drivers back on the road fast.</li>
+        <li>All makes and models, foreign and domestic, handled in one shop.</li>
+        <li>Locally owned neighbors who stand behind their work.</li>
+      </ul>
+      <div style="margin-top:1.8rem;display:flex;gap:.9rem;flex-wrap:wrap">
+        <a href="#request" class="btn btn-steel">Request Service</a>
+        <a href="tel:9725398668" class="btn btn-line">(972) 539-8668</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how" style="background:var(--paper);border-block:1px solid var(--hair)">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow" style="justify-content:center">How It Works</span>
+      <h2 style="margin-top:1rem">Getting your car fixed shouldn't be a hassle.</h2>
+      <p style="margin-inline:auto">Request service online in under a minute — no phone tag required — and we'll take it from there.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h3>Request Service</h3><p>Tell us what's going on with your vehicle online or by phone. Describe the issue in your own words — we'll figure out the rest.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>Honest Diagnosis</h3><p>We inspect and diagnose the real problem, then give you a clear, up-front price before any work begins. No surprises.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>Back on the Road</h3><p>We do the job right — often the same day — and stand behind it. You drive off knowing exactly what was done and why.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:none">
+      <span class="eyebrow" style="justify-content:center">4.8 ★ · 44 Google Reviews</span>
+      <h2 style="margin-top:1rem">Neighbors who trust us with their cars.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Their work is excellent and their prices are fair — for all jobs, great and small. I won't take my vehicles anywhere else."</p><cite>— Brian, Google Review</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"I was finished within an hour and the price was very reasonable. Quick, friendly and no runaround at all."</p><cite>— Google Review</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Unbelievably honest — they told me what I actually needed and what could wait. They've got a customer for life."</p><cite>— Pradeep, Google Review</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST / BAND -->
+<section class="section" id="request">
+  <div class="wrap">
+    <div class="band reveal">
+      <span class="eyebrow" style="color:var(--accent);justify-content:center">Request Service</span>
+      <h2 style="margin-top:1rem">Ready for honest repair at a fair price?</h2>
+      <p>Request service online or call now. Same-day service available on many jobs — engine, brakes, A/C, diagnostics, oil changes and Texas state inspections.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:9725398668" class="btn btn-primary">Call (972) 539-8668</a>
+        <a href="https://maps.google.com/?q=3001+Justin+Rd+%23105+Flower+Mound+TX+75028" class="btn btn-ghost">Get Directions</a>
+      </div>
+      <p style="margin-top:1.6rem;font-size:.9rem;color:#DBE7F1">📍 3001 Justin Rd #105, Flower Mound, TX 75028</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand" style="font-size:1.4rem;font-weight:800">🔧 Flower Mound Vehicle Repair</div>
+        <p style="font-size:.92rem">Independent, honest auto repair for Flower Mound and the surrounding area. Engine, brakes, A/C, diagnostics, oil changes and state inspections — fair prices, great work, all makes and models.</p>
+      </div>
+      <div>
+        <small>Contact</small>
+        <a href="tel:9725398668" class="big">(972) 539-8668</a>
+        <a href="https://maps.google.com/?q=3001+Justin+Rd+%23105+Flower+Mound+TX+75028">3001 Justin Rd #105<br>Flower Mound, TX 75028</a>
+      </div>
+      <div>
+        <small>Services</small>
+        <a href="#services">Engine &amp; Brake Repair</a>
+        <a href="#services">A/C, Heating &amp; Diagnostics</a>
+        <a href="#services">Oil Changes &amp; Inspections</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Flower Mound Vehicle Repair · Flower Mound, TX · Locally owned &amp; operated.</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a> · (972) 539-8668 · Flower Mound, TX</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
