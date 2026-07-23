@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DFW Black Car &amp; Limo — Luxury Chauffeured Transportation | Dallas–Fort Worth</title>
+<meta name="description" content="Arrive in effortless luxury. Premium chauffeured black car, SUV, limo & executive Sprinter service across Dallas–Fort Worth. Airport, corporate, weddings & events. Rated 5.0★.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0A0B; --panel:#111113; --panel2:#161519;
+  --gold:#C9A24B; --gold-bright:#E7C97A; --gold-deep:#A9853C;
+  --cream:#F5F2EA; --cream-2:#CFC8B8; --muted:#8C8579;
+  --hair:rgba(201,162,75,.20); --hair-strong:rgba(201,162,75,.4);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream-2);font-family:var(--sans);font-weight:300;line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.4rem,5vw,3rem)}
+.eyebrow{font-family:var(--sans);font-weight:400;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.8rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.7}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--cream);line-height:1.06;letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.4vw,3.4rem)}
+em{font-style:italic;color:var(--gold-bright);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:400;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:1.05rem 2.1rem;border:1px solid var(--gold);cursor:pointer;transition:all .3s var(--ease)}
+.btn-gold{background:var(--gold);color:#140F04}
+.btn-gold:hover{background:var(--gold-bright);border-color:var(--gold-bright);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--cream);border-color:var(--hair-strong)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-bright)}
+.section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,padding .4s;border-bottom:1px solid transparent;padding:.4rem 0}
+header.scrolled{background:rgba(10,10,11,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.32rem;color:var(--cream);letter-spacing:.02em}
+.brand span{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-top:.28rem}
+.nav-links{display:flex;gap:2.2rem;align-items:center}
+.nav-links a{font-size:.82rem;letter-spacing:.06em;color:var(--cream-2);transition:color .25s}
+.nav-links a:hover{color:var(--gold-bright)}
+.nav-cta{font-size:.74rem!important;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)!important;background:var(--gold);padding:.7rem 1.3rem;transition:.3s}
+.nav-cta:hover{background:var(--gold-bright)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:26px;height:1.5px;background:var(--cream)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#000 center/cover no-repeat;transform:scale(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,6,7,.97) 0%,rgba(6,6,7,.85) 38%,rgba(6,6,7,.45) 78%,rgba(6,6,7,.3) 100%),linear-gradient(0deg,rgba(6,6,7,.92),transparent 50%)}
+.hero-inner{position:relative;z-index:2;padding-top:90px}
+.hero h1{font-size:clamp(3rem,7.4vw,6rem);margin:1.4rem 0 1.6rem;max-width:16ch}
+.hero p.lead{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:46ch;color:var(--cream-2);margin-bottom:2.4rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-phone{margin-left:.4rem;font-size:.9rem;letter-spacing:.04em;color:var(--cream)}
+.hero-phone b{color:var(--gold-bright);font-weight:400}
+.rating-badge{position:absolute;right:0;bottom:8vh;z-index:2;text-align:right;border-right:2px solid var(--gold);padding-right:1.2rem}
+.rating-badge .stars{color:var(--gold);letter-spacing:.2em;font-size:1rem}
+.rating-badge b{font-family:var(--serif);font-size:2.6rem;color:var(--cream);display:block;line-height:1}
+.rating-badge small{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* TRUST STRIP */
+.trust{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:var(--panel)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-top:2.2rem;padding-bottom:2.2rem}
+.trust div{text-align:center;padding:.4rem}
+.trust b{font-family:var(--serif);font-size:2rem;color:var(--gold-bright);display:block;line-height:1.1}
+.trust small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* SECTION HEAD */
+.head{max-width:56ch;margin-bottom:3.4rem}
+.head .eyebrow{margin-bottom:1.4rem}
+.head p{margin-top:1.2rem;color:var(--cream-2);max-width:52ch}
+
+/* SERVICES */
+.grid{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--ink);padding:2.4rem 2rem;transition:background .4s}
+.card:hover{background:var(--panel2)}
+.card .ic{width:34px;height:34px;color:var(--gold);margin-bottom:1.3rem}
+.card h3{font-size:1.5rem;margin-bottom:.6rem}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* FLEET */
+.fleet{background:var(--panel)}
+.fleet-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:1rem}
+.veh{border:1px solid var(--hair);padding:2rem 1.6rem;transition:.4s;background:var(--ink)}
+.veh:hover{border-color:var(--gold);transform:translateY(-4px)}
+.veh .num{font-family:var(--serif);font-size:.9rem;color:var(--gold);letter-spacing:.2em}
+.veh h3{font-size:1.42rem;margin:.7rem 0 .5rem}
+.veh p{font-size:.86rem;color:var(--muted)}
+
+/* EXPERIENCE split */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;border:1px solid var(--hair)}
+.split-img{background:#000 center/cover no-repeat;min-height:440px}
+.split-txt{padding:clamp(2.4rem,5vw,4rem);background:var(--panel2);display:flex;flex-direction:column;justify-content:center}
+.split-txt ul{list-style:none;margin-top:1.6rem}
+.split-txt li{padding:.85rem 0;border-top:1px solid var(--hair);display:flex;gap:.9rem;align-items:flex-start;font-size:.96rem;color:var(--cream-2)}
+.split-txt li::before{content:"";width:7px;height:7px;background:var(--gold);margin-top:.55rem;flex:0 0 auto;transform:rotate(45deg)}
+
+/* REVIEWS */
+.reviews{text-align:center}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem;text-align:left}
+.quote{border:1px solid var(--hair);padding:2.2rem;background:var(--panel);transition:.4s}
+.quote:hover{border-color:var(--hair-strong)}
+.quote .stars{color:var(--gold);letter-spacing:.18em;margin-bottom:1rem}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.24rem;line-height:1.5;color:var(--cream);margin-bottom:1.2rem}
+.quote cite{font-style:normal;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+
+/* CTA BAND */
+.band{background:linear-gradient(135deg,#15110A,#0A0A0B);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);text-align:center}
+.band h2{margin-bottom:1.4rem}
+.band p{max-width:44ch;margin:0 auto 2.2rem;color:var(--cream-2)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.info b{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:1.6rem 0 .4rem}
+.info a,.info span{font-size:1.15rem;color:var(--cream);font-family:var(--serif)}
+.info .big{font-size:1.9rem}
+
+/* FOOTER */
+footer{border-top:1px solid var(--hair);padding:3rem 0 2.4rem;background:var(--panel)}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.4rem}
+.foot small{font-size:.76rem;color:var(--muted);letter-spacing:.04em}
+.foot .ts{font-size:.7rem;color:var(--muted);letter-spacing:.1em}
+.foot .ts a{color:var(--gold)}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--panel);flex-direction:column;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s var(--ease);border-left:1px solid var(--hair)}
+  .nav-links.open{transform:none}
+  .burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .grid-3{grid-template-columns:1fr}
+  .fleet-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .split-img{min-height:300px}
+  .rev-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:1.6rem}
+  .rating-badge{display:none}
+}
+@media(max-width:520px){.fleet-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><b>DFW Black Car</b><span>&amp; Limousine</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#experience">Experience</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:9725876746" class="nav-cta">Reserve · (972) 587-6746</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Luxury Personified · Dallas–Fort Worth</span>
+    <h1>Arrive in <em>Effortless</em> Luxury.</h1>
+    <p class="lead">Impeccable chauffeured travel for the moments that matter — airport, corporate, weddings and nights out. Vetted chauffeurs, a spotless fleet, and pricing with no surprises.</p>
+    <div class="hero-cta">
+      <a href="https://dfwblackcar.com" class="btn btn-gold">Reserve Your Ride</a>
+      <a href="tel:9725876746" class="btn btn-line">Call Now</a>
+      <span class="hero-phone">or dial <b>(972) 587-6746</b></span>
+    </div>
+  </div>
+  <div class="rating-badge">
+    <div class="stars">★★★★★</div>
+    <b>5.0</b>
+    <small>105 Google Reviews</small>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>5.0★</b><small>Perfect Google Rating</small></div>
+    <div class="reveal"><b>60+</b><small>Years Combined Experience</small></div>
+    <div class="reveal"><b>24/7</b><small>On-Time, Every Time</small></div>
+    <div class="reveal"><b>$0</b><small>Hidden Fees — Ever</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Every occasion, <em>elevated</em>.</h2>
+      <p>From a quiet 5 a.m. run to DFW to a wedding send-off, we tailor the ride to the moment — discreet, punctual, and always immaculate.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 16l20-6-8 12-2-4-4-1z"/><path d="M22 10L11 14"/></svg><h3>Airport Transfers</h3><p>Seamless pickups & drop-offs at DFW International and Dallas Love Field — flight-tracked so we're there when you land.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M8 6V4h8v2"/></svg><h3>Corporate Travel</h3><p>Executive-grade transportation for clients, roadshows and teams — professional chauffeurs and a quiet, connected ride.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg><h3>Weddings</h3><p>A flawless arrival and send-off for your day — red-carpet service, décor-ready vehicles, and a chauffeur who anticipates.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21l-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg><h3>Prom &amp; Milestones</h3><p>Safe, celebratory and unforgettable. Parents relax knowing a vetted, professional chauffeur is behind the wheel.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Point-to-Point</h3><p>Dinner, downtown, or across the metroplex — one call and a black car is on its way, on your schedule.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-6h6v6"/></svg><h3>Nights Out &amp; Events</h3><p>Concerts, games, birthdays and city tours — arrive together, in style, with no one worrying about the drive home.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section class="section fleet" id="fleet">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Fleet</span>
+      <h2>Meticulously maintained. <em>Always spotless.</em></h2>
+      <p>Every vehicle is safety-inspected and detailed before it reaches you. Choose the ride that fits the occasion.</p>
+    </div>
+    <div class="fleet-grid">
+      <div class="veh reveal"><div class="num">01</div><h3>Executive Sedan</h3><p>Discreet luxury for 1–3 guests. The quiet standard for airport and corporate travel.</p></div>
+      <div class="veh reveal"><div class="num">02</div><h3>Luxury SUV</h3><p>Escalade &amp; Yukon XL. Space, presence and comfort for up to 6 with luggage.</p></div>
+      <div class="veh reveal"><div class="num">03</div><h3>Stretch Limousine</h3><p>The classic statement ride for weddings, proms and once-in-a-lifetime nights.</p></div>
+      <div class="veh reveal"><div class="num">04</div><h3>Executive Sprinter</h3><p>Club-style seating for the whole group — the star of any night out in DFW.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-img" style="background-image:url('assets/interior.jpg')"></div>
+      <div class="split-txt">
+        <span class="eyebrow">The Difference</span>
+        <h2 style="margin-top:1.2rem">Why riders <em>only</em> book us.</h2>
+        <ul>
+          <li>Professionally vetted, background-checked chauffeurs — courteous and discreet.</li>
+          <li>Transparent, all-in pricing. The quote is the price — no surprise fees.</li>
+          <li>Flight-tracked airport service; we monitor delays so you never wait or worry.</li>
+          <li>Immaculate, regularly inspected vehicles detailed before every ride.</li>
+          <li>Effortless booking online or by phone, 24 hours a day.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reveal" style="display:inline-block">
+      <span class="eyebrow" style="justify-content:center">A Perfect 5.0</span>
+      <h2 style="margin:1.2rem 0 .4rem">Loved by <em>105</em> riders and counting.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Just got back from a night out with the coolest and best-fitted limo in DFW!"</p><cite>— Google Review</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"With 25 years of booking limo service for groups, I can confidently say DFW Black Car provided excellent service."</p><cite>— Dana S.</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Josh and his team were awesome for my daughter's birthday ride. We felt totally safe and respected."</p><cite>— Andria F.</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Reserve Today</span>
+    <h2 style="margin-top:1.2rem">Your car is <em>waiting</em>.</h2>
+    <p>Tell us the date, time and occasion — we'll handle the rest. Reserve online or speak with us directly.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="https://dfwblackcar.com" class="btn btn-gold">Book Online</a>
+      <a href="tel:9725876746" class="btn btn-line">(972) 587-6746</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="margin:1.2rem 0 1rem">Effortless from<br>the first call.</h2>
+      <p style="color:var(--cream-2)">Serving the entire Dallas–Fort Worth metroplex, DFW International and Dallas Love Field — 24 hours a day, 7 days a week.</p>
+    </div>
+    <div class="info reveal">
+      <b>Reserve By Phone</b>
+      <a class="big" href="tel:9725876746">(972) 587-6746</a>
+      <b>Book Online</b>
+      <a href="https://dfwblackcar.com">dfwblackcar.com</a>
+      <b>Service Area</b>
+      <span>Dallas–Fort Worth &amp; Beyond</span>
+      <b>Availability</b>
+      <span>24 / 7 · By Reservation</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <small>© 2026 DFW Black Car &amp; Limousine · Luxury Personified · Dallas–Fort Worth, TX</small>
+    <span class="ts">Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a></span>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*80)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

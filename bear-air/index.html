@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bear Air Services — AC &amp; Heating Repair, Install &amp; Maintenance | Flower Mound &amp; Highland Village, TX</title>
+<meta name="description" content="Trusted HVAC repair, installation & maintenance in Flower Mound, Highland Village & the DFW area. 24/7 service, NATE-certified techs, honest pricing, financing available. Rated a perfect 5.0★ across 260 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2E4E; --navy-2:#123A61; --blue:#2079B8; --blue-2:#3B92CE; --blue-soft:#E9F2F9;
+  --accent:#F0A03C; --accent-deep:#D9862A;
+  --bg:#F5F8FC; --paper:#fff; --ink:#12263A; --ink-2:#516378; --muted:#8493A6; --hair:#E4EBF3;
+  --sans:"Manrope",system-ui,sans-serif; --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink-2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{color:var(--ink);font-weight:800;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem)}
+.eyebrow{font-weight:700;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.9rem;padding:1rem 1.7rem;border-radius:12px;cursor:pointer;transition:all .28s var(--ease);border:2px solid transparent}
+.btn-primary{background:var(--accent);color:#3A2405}
+.btn-primary:hover{background:var(--accent-deep);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(217,134,42,.6)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--blue);color:var(--blue)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:54ch;margin-bottom:3rem}.head .eyebrow{margin-bottom:1rem}.head p{margin-top:1rem}
+
+/* top bar */
+.topbar{background:var(--navy);color:#C6D6E6;font-size:.82rem;font-weight:500}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar a{color:#fff;font-weight:700}
+.topbar .hrs{color:#9DB3C8}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.4rem;color:var(--navy);letter-spacing:-.02em}
+.brand .m{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--navy));display:grid;place-items:center;color:#fff;font-size:1.1rem}
+.nav-links{display:flex;gap:1.9rem;align-items:center}
+.nav-links a{font-weight:600;font-size:.92rem;color:var(--ink-2);transition:.2s}.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--accent);color:#3A2405!important;padding:.62rem 1.2rem;border-radius:10px;font-weight:700;font-size:.86rem}
+.nav-cta:hover{background:var(--accent-deep);color:#fff!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:2.5px;background:var(--navy);border-radius:2px}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#0E2E4E center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,27,46,.96) 0%,rgba(9,27,46,.82) 45%,rgba(9,27,46,.4) 100%)}
+.hero-inner{position:relative;z-index:2;padding:clamp(3.5rem,7vw,6.5rem) 0}
+.hero .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.chip{font-size:.72rem;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#DCE8F3;padding:.4rem .8rem;border-radius:100px}
+.hero h1{color:#fff;font-size:clamp(2.5rem,5.6vw,4.3rem);max-width:15ch;margin-bottom:1.2rem}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.22rem);max-width:46ch;color:#C7D6E6;margin-bottom:2rem}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-rating{display:flex;align-items:center;gap:.7rem;margin-top:2rem;color:#DCE8F3;font-size:.9rem}
+.hero-rating b{font-size:1.5rem;color:#fff;font-weight:800}.hero-rating .stars{color:var(--accent);letter-spacing:.1em}
+
+/* trust */
+.trust{background:var(--paper);border-bottom:1px solid var(--hair)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.2rem 0}
+.trust div{text-align:center}
+.trust b{font-size:2rem;font-weight:800;color:var(--navy);display:block;line-height:1}
+.trust small{font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:2.1rem 1.8rem;transition:.3s}
+.svc:hover{transform:translateY(-5px);box-shadow:0 22px 44px -24px rgba(14,46,78,.4);border-color:var(--blue-2)}
+.svc .ic{width:52px;height:52px;border-radius:13px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc h3{font-size:1.28rem;margin-bottom:.4rem;font-weight:700}
+.svc p{font-size:.92rem;color:var(--ink-2)}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.split-img{border-radius:18px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 24px 50px -28px rgba(14,46,78,.4)}
+.split-img img{width:100%;height:100%;object-fit:cover}
+.split ul{list-style:none;margin-top:1.4rem}
+.split li{padding:.75rem 0;border-top:1px solid var(--hair);display:flex;gap:.8rem;align-items:flex-start;color:var(--ink);font-weight:500}
+.split li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:var(--blue-soft);color:var(--blue);border-radius:50%;font-size:.8rem;font-weight:800;flex:0 0 auto;margin-top:.1rem}
+
+/* area */
+.area{background:var(--navy);color:#C7D6E6;border-radius:22px;padding:clamp(2.4rem,5vw,3.6rem);text-align:center}
+.area h2{color:#fff}
+.area .pri{color:var(--accent);font-weight:800}
+.area .cities{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.6rem}
+.area .cities span{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);padding:.45rem 1rem;border-radius:100px;font-size:.86rem;font-weight:600;color:#DCE8F3}
+.area .cities span.hot{background:var(--accent);color:#3A2405;border-color:var(--accent)}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.rev{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:1.9rem}
+.rev .stars{color:var(--accent);letter-spacing:.1em;margin-bottom:.8rem}
+.rev p{color:var(--ink);font-weight:500;font-size:1.02rem;line-height:1.5;margin-bottom:.9rem}
+.rev cite{font-style:normal;font-size:.82rem;font-weight:700;color:var(--blue)}
+
+/* band */
+.band{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;text-align:center;border-radius:26px;padding:clamp(2.8rem,5vw,4.5rem)}
+.band h2{color:#fff}.band p{color:#C7D6E6;max-width:44ch;margin:1rem auto 2rem}
+
+footer{background:var(--navy);color:#9DB3C8;padding:3rem 0 2rem;margin-top:clamp(3rem,6vw,5rem)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot h4{color:#fff;margin-bottom:.7rem}
+.foot .brand{color:#fff;margin-bottom:.6rem}
+.foot a{display:block;padding:.18rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--accent)}
+.foot .big{color:#fff;font-size:1.4rem;font-weight:800}
+.foot small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--accent)}
+
+@media(max-width:900px){
+  .topbar .hrs{display:none}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--paper);flex-direction:column;justify-content:center;gap:1.7rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.12)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .svc-grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-img{order:-1}
+  .rev-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>🐻 Serving Flower Mound, Highland Village &amp; DFW since 2004</span>
+    <span class="hrs">Mon–Fri 8–8 · Sat 8–3 · <a href="tel:9724883366">24/7 Emergency</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="m">❄</span> Bear Air</a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:9724883366" class="nav-cta">Schedule Service</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <div class="badges">
+      <span class="chip">NATE-Certified</span>
+      <span class="chip">Licensed &amp; Insured</span>
+      <span class="chip">Bryant Dealer</span>
+      <span class="chip">Financing Available</span>
+    </div>
+    <h1>Comfort you can <span>count on.</span></h1>
+    <p class="lead">Fast, honest AC &amp; heating repair, installation and maintenance for Flower Mound, Highland Village and the DFW area — from a team that answers the phone and treats your home right.</p>
+    <div class="hero-cta">
+      <a href="tel:9724883366" class="btn btn-primary">Schedule Service</a>
+      <a href="tel:9724883366" class="btn btn-ghost">Call 24/7 · (972) 488-3366</a>
+    </div>
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span><b>5.0</b><span>Perfect rating across <b style="font-size:1rem">260</b> Google reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>5.0★</b><small>260 Google Reviews</small></div>
+    <div class="reveal"><b>20+</b><small>Years in Business</small></div>
+    <div class="reveal"><b>24/7</b><small>Emergency Service</small></div>
+    <div class="reveal"><b>$0</b><small>Surprise Fees</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Whatever your home needs to stay comfortable.</h2>
+      <p>Heating, cooling and clean air — repaired, installed and maintained by NATE-certified technicians who service all makes and models.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M3 12h18M6 6l12 12M18 6L6 18"/></svg></div><h3>AC Repair</h3><p>Fast, accurate diagnostics and honest fixes to get your cooling back — often the same day, 24/7 when it's an emergency.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div><h3>Install &amp; Replace</h3><p>New high-efficiency systems and full replacements as an authorized Bryant dealer — sized right and installed to last.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div><h3>Preventive Maintenance</h3><p>Seasonal tune-ups and service agreements that keep your system efficient, reliable, and out of the repair shop.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><h3>Indoor Air Quality</h3><p>Air purifiers, UV systems, humidifiers and duct sealing — for cleaner, healthier air in every room.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="10" rx="2"/><path d="M7 19h10M9 15v4M15 15v4"/></svg></div><h3>Ductless Mini-Splits</h3><p>Efficient, room-by-room comfort for additions, garages and older homes — expertly installed and configured.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h3>Heating &amp; Furnace</h3><p>Furnace repair, heat pumps and safety checks to keep your family warm through every Texas cold snap.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap split">
+    <div class="split-img reveal"><img src="assets/comfort.jpg" alt="A comfortable, climate-controlled family home"></div>
+    <div class="reveal">
+      <span class="eyebrow">Why Homeowners Choose Bear Air</span>
+      <h2 style="margin:1rem 0">A perfect 5.0 — earned the honest way.</h2>
+      <p>260 five-star reviews don't happen by accident. They happen when a company answers the phone, shows up on time, and does right by every customer.</p>
+      <ul>
+        <li>Honest, up-front pricing — <b style="color:var(--ink)">no pressure and no upselling</b>, ever.</li>
+        <li>Prompt, reliable techs who arrive on time and clean up after themselves.</li>
+        <li>NATE-certified, licensed &amp; insured — we service all makes and models.</li>
+        <li>Flexible financing with approved credit, so comfort fits your budget.</li>
+        <li>Real people who answer the phone — day or night.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area">
+  <div class="wrap">
+    <div class="area reveal">
+      <span class="eyebrow" style="color:var(--accent);justify-content:center">Proudly Local</span>
+      <h2 style="margin:1rem 0">Serving <span class="pri">Flower Mound</span> &amp; <span class="pri">Highland Village</span></h2>
+      <p style="max-width:52ch;margin:0 auto">Your neighbors, not a faceless chain. We keep homes comfortable across Flower Mound, Highland Village and the surrounding DFW communities.</p>
+      <div class="cities">
+        <span class="hot">Flower Mound</span><span class="hot">Highland Village</span>
+        <span>Lewisville</span><span>Argyle</span><span>Grapevine</span><span>Coppell</span>
+        <span>Carrollton</span><span>Frisco</span><span>Plano</span><span>Irving</span><span>The Colony</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:none">
+      <span class="eyebrow" style="justify-content:center">5.0 ★ · 260 Reviews</span>
+      <h2 style="margin-top:1rem">Neighbors who trust us.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"He answers his calls, his prices are very fair, and his work ethic is unmatched."</p><cite>— Google Review</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Always on time and honest. Nothing extra or unnecessary — just high-quality work and friendly service."</p><cite>— Ketan P.</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Installed my new AC and their prices were very competitive or better than every other quote I got."</p><cite>— Jeff L.</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="section">
+  <div class="wrap">
+    <div class="band reveal">
+      <h2>Too hot? Too cold? Let's fix that.</h2>
+      <p>Schedule service online or call now — 24/7 for emergencies. Ask about financing and our seasonal maintenance plans.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:9724883366" class="btn btn-primary">Schedule Service</a>
+        <a href="tel:9724883366" class="btn btn-ghost">(972) 488-3366</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand" style="font-size:1.4rem;font-weight:800">❄ Bear Air Services</div>
+        <p style="font-size:.92rem">Premiere residential heating &amp; cooling for Flower Mound, Highland Village and the DFW area. Honest work, fair prices, 5.0 stars.</p>
+      </div>
+      <div>
+        <small>Contact</small>
+        <a href="tel:9724883366" class="big">(972) 488-3366</a>
+        <a href="https://bearheatac.com">bearheatac.com</a>
+        <a href="#">2801 Justin Rd, Bldg 200<br>Flower Mound, TX 75028</a>
+      </div>
+      <div>
+        <small>Hours</small>
+        <a href="#">Mon–Fri: 8am – 8pm</a>
+        <a href="#">Saturday: 8am – 3pm</a>
+        <a href="#">Sunday: Emergency service</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Bear Air Services. Licensed &amp; Insured · NATE-Certified.</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
