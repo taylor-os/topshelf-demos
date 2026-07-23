@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sip Stir Coffee House — Your Neighborhood Coffee House | Highland Village, TX</title>
+<meta name="description" content="Sip Stir Coffee House in Highland Village, TX — signature Butter Beer, Crème Brûlée & Vanilla Lavender lattes, fresh toasts and pastries. Cozy vibe, free WiFi, outlets, patio. Dine-in, curbside, delivery & online ordering. Rated 4.6★ across 262 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F6EEE1; --cream-2:#FBF6EC; --paper:#fff; --espresso:#3A2A20; --espresso-2:#4A3629;
+  --ink-2:#6B5648; --muted:#9C8977;
+  --caramel:#C57B46; --caramel-deep:#A9622F; --terra:#B85C38; --sage:#8AA07E; --sage-soft:#E7EBDF;
+  --caramel-soft:#F0E2D2; --hair:#E7DAC8;
+  --disp:"Fraunces",Georgia,serif; --sans:"Work Sans",system-ui,sans-serif;
+  --maxw:1160px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink-2);font-family:var(--sans);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{font-family:var(--disp);font-weight:600;color:var(--espresso);line-height:1.08;letter-spacing:-.015em}
+h2{font-size:clamp(2rem,4.2vw,3.05rem)}
+.disp{font-family:var(--disp)}
+em{font-style:italic;color:var(--caramel-deep)}
+.eyebrow{font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--caramel-deep);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"☕";font-size:.9rem;filter:saturate(.5)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:600;font-size:.88rem;letter-spacing:.01em;padding:.95rem 1.8rem;border-radius:100px;cursor:pointer;transition:all .3s var(--ease);border:2px solid transparent}
+.btn-primary{background:var(--caramel);color:#fff}
+.btn-primary:hover{background:var(--caramel-deep);transform:translateY(-2px);box-shadow:0 14px 28px -12px rgba(169,98,47,.6)}
+.btn-espresso{background:var(--espresso);color:#fff}
+.btn-espresso:hover{background:var(--espresso-2);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--espresso);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--caramel);color:var(--caramel-deep)}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.24)}
+.section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:52ch;margin-bottom:3rem}
+.head .eyebrow{margin-bottom:1rem}
+.head p{margin-top:1rem;color:var(--ink-2)}
+
+/* top bar */
+.topbar{background:var(--espresso);color:#E4D3C2;font-size:.82rem;font-weight:500}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar a{color:#fff;font-weight:600}
+.topbar .hrs{color:#C6B09B}
+
+header{position:sticky;top:0;z-index:100;background:rgba(246,238,225,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--disp);font-weight:600;font-size:1.34rem;color:var(--espresso)}
+.brand .dot{width:36px;height:36px;border-radius:50%;background:var(--caramel);color:#fff;display:grid;place-items:center;font-size:1.05rem}
+.nav-links{display:flex;gap:1.9rem;align-items:center}
+.nav-links a{font-weight:500;font-size:.92rem;color:var(--ink-2);transition:.25s}
+.nav-links a:hover{color:var(--caramel-deep)}
+.nav-cta{background:var(--caramel);color:#fff!important;padding:.6rem 1.2rem;border-radius:100px;font-weight:600;font-size:.85rem}
+.nav-cta:hover{background:var(--caramel-deep)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:2.5px;background:var(--espresso);border-radius:2px}
+
+/* hero */
+.hero{position:relative;padding:clamp(2.8rem,6vw,5rem) 0 clamp(3rem,7vw,5.5rem)}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero h1{font-size:clamp(2.7rem,5.6vw,4.4rem);margin:1.1rem 0 1.2rem;color:var(--espresso)}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);max-width:44ch;margin-bottom:2rem;color:var(--ink-2)}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-rating{display:flex;align-items:center;gap:.7rem;margin-top:1.9rem;color:var(--ink-2);font-size:.9rem}
+.hero-rating b{font-family:var(--disp);font-size:1.5rem;color:var(--espresso);font-weight:600}
+.hero-rating .stars{color:var(--caramel);letter-spacing:.1em}
+.hero-img{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(58,42,32,.55);aspect-ratio:5/5}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-16px;bottom:26px;background:#fff;border-radius:18px;padding:1rem 1.3rem;box-shadow:0 18px 40px -18px rgba(58,42,32,.5);display:flex;align-items:center;gap:.8rem}
+.hero-badge .n{font-family:var(--disp);font-size:2rem;color:var(--caramel-deep);line-height:1;font-weight:600}
+.hero-badge .stars{color:var(--caramel);font-size:.85rem;letter-spacing:.1em}
+.hero-badge small{font-size:.72rem;color:var(--muted);display:block}
+.hero-note{position:absolute;top:20px;right:-10px;background:var(--sage);color:#243019;font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:.5rem .9rem;border-radius:100px;box-shadow:0 12px 26px -14px rgba(58,42,32,.5)}
+
+/* trust */
+.trust{background:var(--espresso);color:#E4D3C2}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.4rem 0}
+.trust div{text-align:center}
+.trust b{font-family:var(--disp);font-weight:600;font-size:2.1rem;color:#fff;display:block;line-height:1}
+.trust small{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:#C6B09B}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.mcard{background:var(--paper);border:1px solid var(--hair);border-radius:22px;padding:2.2rem 1.9rem;transition:.35s;position:relative;overflow:hidden}
+.mcard::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--grad)}
+.mcard:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(58,42,32,.4);border-color:transparent}
+.mcard .ic{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;margin-bottom:1.3rem;font-size:1.7rem;background:var(--sw)}
+.mcard h3{font-size:1.42rem;margin-bottom:.45rem}
+.mcard p{font-size:.94rem;color:var(--ink-2)}
+.mcard .tag{margin-top:1.15rem;font-size:.8rem;font-weight:600;color:var(--caramel-deep);display:inline-flex;align-items:center;gap:.4rem}
+.eats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.6rem}
+.eat{background:var(--cream-2);border:1px solid var(--hair);border-radius:16px;padding:1.3rem 1.4rem;display:flex;gap:.9rem;align-items:center}
+.eat .e{font-size:1.6rem;flex:0 0 auto}
+.eat b{display:block;font-family:var(--disp);font-weight:600;color:var(--espresso);font-size:1.08rem;line-height:1.2}
+.eat span{font-size:.84rem;color:var(--ink-2)}
+
+/* story split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.story-card{border-radius:24px;background:linear-gradient(150deg,var(--espresso),var(--espresso-2));color:#EFE2D4;padding:clamp(2.2rem,4vw,3rem);box-shadow:0 26px 60px -30px rgba(58,42,32,.55);aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:space-between}
+.story-card .big{font-family:var(--disp);font-size:clamp(2.4rem,4vw,3.2rem);color:#fff;line-height:1.05}
+.story-card .big em{color:var(--caramel)}
+.story-card .row{display:flex;gap:1.6rem;flex-wrap:wrap}
+.story-card .row div b{display:block;font-family:var(--disp);font-size:1.9rem;color:#fff;line-height:1}
+.story-card .row div small{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:#C6B09B}
+.split ul{list-style:none;margin-top:1.5rem}
+.split li{padding:.8rem 0;border-top:1px solid var(--hair);display:flex;gap:.8rem;align-items:flex-start;color:var(--espresso);font-size:.98rem}
+.split li b{color:var(--caramel-deep);font-family:var(--disp);font-weight:600}
+.split li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:var(--sage-soft);color:var(--sage);border-radius:50%;font-size:.78rem;font-weight:800;flex:0 0 auto;margin-top:.15rem}
+
+/* visit / hours+location */
+.visit{background:var(--cream-2);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+.vcard{background:var(--paper);border:1px solid var(--hair);border-radius:22px;padding:2.3rem}
+.vcard h3{font-size:1.6rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:.6rem}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:.6rem 0;border-top:1px solid var(--hair);font-size:.96rem}
+.hours li:first-child{border-top:none}
+.hours li span:first-child{color:var(--ink-2);font-weight:500}
+.hours li span:last-child{color:var(--espresso);font-weight:600}
+.hours li.today{color:var(--caramel-deep)}
+.hours li.today span{color:var(--caramel-deep)}
+.vcard .addr{font-style:normal;color:var(--espresso);font-weight:600;font-size:1.08rem;line-height:1.5;margin-bottom:.4rem}
+.vcard .sub{font-size:.92rem;color:var(--ink-2);margin-bottom:1.4rem}
+.pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.pills span{background:var(--sage-soft);color:#3E5233;font-size:.78rem;font-weight:600;padding:.4rem .85rem;border-radius:100px}
+
+/* reviews */
+.reviews{background:var(--espresso);color:#EFE2D4;text-align:center}
+.reviews h2{color:#fff}
+.reviews .eyebrow{color:var(--caramel);justify-content:center}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem;text-align:left}
+.rev{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:2rem}
+.rev .stars{color:var(--caramel);letter-spacing:.1em;margin-bottom:.9rem}
+.rev p{font-family:var(--disp);font-size:1.14rem;font-style:italic;line-height:1.5;color:#fff;margin-bottom:1rem}
+.rev cite{font-style:normal;font-size:.8rem;color:#C6B09B;font-weight:600}
+
+/* band */
+.band{text-align:center}
+.band-inner{background:linear-gradient(135deg,var(--caramel),#DDA06A);border-radius:30px;padding:clamp(2.6rem,5vw,4.5rem)}
+.band h2{color:#412300}
+.band p{color:#5B3413;max-width:44ch;margin:1rem auto 2rem}
+
+footer{background:var(--espresso);color:#C6B09B;padding:3rem 0 2.2rem}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot h4{font-family:var(--disp);color:#fff;font-size:1.3rem;margin-bottom:.6rem}
+.foot small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--caramel);margin-bottom:.5rem}
+.foot a{display:block;padding:.2rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--caramel)}
+.foot .big{font-family:var(--disp);color:#fff;font-size:1.4rem}
+.foot p{font-size:.92rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--caramel)}
+
+@media(max-width:900px){
+  .topbar .hrs{display:none}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--cream-2);flex-direction:column;justify-content:center;gap:1.8rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.1)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .hero-grid{grid-template-columns:1fr}.hero-img{order:-1}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.6rem}
+  .menu-grid{grid-template-columns:1fr}.eats{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}.story-card{order:-1;aspect-ratio:auto}
+  .visit-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>☕ Your neighborhood coffee house · Highland Village, TX</span>
+    <span class="hrs">Order online · Dine-in · Curbside · Delivery</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="dot">☕</span> Sip Stir</a>
+    <nav class="nav-links" id="menu">
+      <a href="#menu-sec">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:4695181117" class="nav-cta">Order Online</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Highland Village, TX · 4.6★ · 262 reviews</span>
+      <h1>Your neighborhood <em>coffee house</em>.</h1>
+      <p class="lead">Handcrafted lattes, warm toasts and fresh pastries — served in a cozy, laptop-friendly spot where the owners still work the counter and remember your order.</p>
+      <div class="hero-cta">
+        <a href="tel:4695181117" class="btn btn-primary">Order Online</a>
+        <a href="tel:4695181117" class="btn btn-line">Call (469) 518-1117</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span><b>4.6</b><span>Loved across <b style="font-size:1rem">262</b> Google reviews</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero.jpg" alt="A cozy handcrafted latte at Sip Stir Coffee House">
+      <div class="hero-note">Owner-operated ☕</div>
+      <div class="hero-badge">
+        <div class="n">4.6</div>
+        <div><div class="stars">★★★★★</div><small>262 Google reviews</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.6★</b><small>Google Rating</small></div>
+    <div class="reveal"><b>262</b><small>Happy Reviews</small></div>
+    <div class="reveal"><b>Owner-Run</b><small>Made With Care</small></div>
+    <div class="reveal"><b>Free WiFi</b><small>Outlets &amp; Patio</small></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu-sec">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Signature Menu</span>
+      <h2>The drinks people drive across DFW for.</h2>
+      <p>Hand-pulled espresso, house syrups, and cozy flavors you won't find at the chains — plus fresh toasts and pastries made to pair.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="mcard reveal" style="--grad:linear-gradient(90deg,#C7913F,#E4B96A);--sw:#F5E8D2">
+        <div class="ic">🧈</div>
+        <h3>Butter Beer Latte</h3>
+        <p>Our signature crowd-favorite — warm butterscotch and vanilla folded into rich espresso and steamed milk. Pure comfort in a cup.</p>
+        <div class="tag">★ Most ordered</div>
+      </div>
+      <div class="mcard reveal" style="--grad:linear-gradient(90deg,#C57B46,#E0A06B);--sw:#F1E0CF">
+        <div class="ic">🍮</div>
+        <h3>Crème Brûlée Latte</h3>
+        <p>Silky caramelized-sugar sweetness with a toasty finish — like dessert and your morning coffee had the best possible idea.</p>
+        <div class="tag">Fan favorite</div>
+      </div>
+      <div class="mcard reveal" style="--grad:linear-gradient(90deg,#8AA07E,#B49BC4);--sw:#E9E4EF">
+        <div class="ic">💜</div>
+        <h3>Vanilla Lavender Latte</h3>
+        <p>Delicate house-made lavender and smooth vanilla over espresso — floral, calming and beautifully balanced. A quiet-morning classic.</p>
+        <div class="tag">Cozy pick</div>
+      </div>
+    </div>
+
+    <div class="eats">
+      <div class="eat reveal"><span class="e">🥑</span><div><b>Avocado Toast</b><span>Fresh, creamy &amp; loaded</span></div></div>
+      <div class="eat reveal"><span class="e">🍏</span><div><b>Apple Peanut Butter Toast</b><span>Sweet, crunchy &amp; wholesome</span></div></div>
+      <div class="eat reveal"><span class="e">🥐</span><div><b>Almond Croissant</b><span>Buttery, flaky &amp; baked fresh</span></div></div>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:2.4rem">
+      <a href="tel:4695181117" class="btn btn-espresso">See Full Menu &amp; Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section" id="story">
+  <div class="wrap split">
+    <div class="story-card reveal">
+      <div class="big">Coffee made by the people who <em>own the place</em>.</div>
+      <div class="row">
+        <div><b>4.6★</b><small>262 reviews</small></div>
+        <div><b>#1</b><small>Latte in DFW*</small></div>
+        <div><b>7 days</b><small>Open all week</small></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2 style="margin:1rem 0">A cozy corner of <em>Highland Village</em>.</h2>
+      <p>Sip Stir isn't a franchise — it's a neighborhood coffee house where you'll often find the owners behind the counter, pulling shots and learning your name. Settle in, plug in, and stay a while.</p>
+      <ul>
+        <li><b>Owner-operated</b> — friendly faces who genuinely care about your cup.</li>
+        <li><b>Built for laptops</b> — plenty of outlets, free WiFi and a warm, quiet vibe.</li>
+        <li><b>Outdoor seating</b> — a sunny patio for coffee, catch-ups and slow mornings.</li>
+        <li><b>Made your way</b> — dine-in, curbside pickup, delivery and gift cards.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section visit" id="visit">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:none">
+      <span class="eyebrow" style="justify-content:center">Find Us</span>
+      <h2 style="margin-top:1rem">Come sit a while.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="vcard reveal">
+        <h3>🕒 Hours</h3>
+        <ul class="hours" id="hours">
+          <li data-day="1"><span>Monday</span><span>6:30 AM – 7:00 PM</span></li>
+          <li data-day="2"><span>Tuesday</span><span>6:30 AM – 7:00 PM</span></li>
+          <li data-day="3"><span>Wednesday</span><span>6:30 AM – 7:00 PM</span></li>
+          <li data-day="4"><span>Thursday</span><span>6:30 AM – 7:00 PM</span></li>
+          <li data-day="5"><span>Friday</span><span>6:30 AM – 8:00 PM</span></li>
+          <li data-day="6"><span>Saturday</span><span>7:00 AM – 8:00 PM</span></li>
+          <li data-day="0"><span>Sunday</span><span>7:00 AM – 6:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="vcard reveal">
+        <h3>📍 Location</h3>
+        <p class="addr">Sip Stir Coffee House<br>2570 Justin Rd #140<br>Highland Village, TX 75077</p>
+        <p class="sub">Easy parking · curbside pickup out front.</p>
+        <div class="pills">
+          <span>Dine-in</span><span>Curbside</span><span>Delivery</span><span>Online ordering</span><span>Gift cards</span><span>Free WiFi</span><span>Outlets</span><span>Patio</span>
+        </div>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="https://www.google.com/maps/search/?api=1&query=Sip+Stir+Coffee+House+2570+Justin+Rd+Highland+Village+TX" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+          <a href="tel:4695181117" class="btn btn-line">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">4.6 ★ · 262 Reviews</span>
+    <h2 style="margin-top:1rem">Loved by the neighborhood.</h2>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"A quiet, chill spot with my favorite latte in all of DFW. I keep coming back."</p><cite>— Google Review</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Friendly baristas — you'll even see the owners behind the counter. Feels like home."</p><cite>— Google Review</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Excellent coffee and delicious avocado toast. Such a cute, cozy little spot."</p><cite>— Google Review</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <div class="band-inner">
+      <h2>Your table's waiting.</h2>
+      <p>Order online for pickup or delivery, or swing by for a Butter Beer Latte and a slow morning on the patio.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:4695181117" class="btn btn-espresso">Order Online</a>
+        <a href="tel:4695181117" class="btn btn-line" style="background:#fff">(469) 518-1117</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>☕ Sip Stir Coffee House</h4>
+        <p>Your neighborhood coffee house in Highland Village, TX. Handcrafted lattes, fresh toasts and a cozy place to stay a while.</p>
+      </div>
+      <div>
+        <small>Visit</small>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sip+Stir+Coffee+House+2570+Justin+Rd+Highland+Village+TX" target="_blank" rel="noopener">2570 Justin Rd #140<br>Highland Village, TX 75077</a>
+        <a href="#visit">Mon–Thu 6:30a–7p</a>
+        <a href="#visit">Fri–Sat til 8p · Sun til 6p</a>
+      </div>
+      <div>
+        <small>Order &amp; Contact</small>
+        <a href="tel:4695181117" class="big">(469) 518-1117</a>
+        <a href="tel:4695181117">Dine-in · Curbside · Delivery</a>
+        <a href="tel:4695181117">Online ordering · Gift cards</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Sip Stir Coffee House · Highland Village, TX.</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io" target="_blank" rel="noopener">Top Shelf</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+// highlight today's hours
+const today=new Date().getDay();
+const row=document.querySelector('#hours li[data-day="'+today+'"]');
+if(row){row.classList.add('today');row.querySelector('span:first-child').textContent+=' · Today';}
+// scroll reveal
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

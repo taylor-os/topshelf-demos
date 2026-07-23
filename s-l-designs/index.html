@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&amp;L Designs — Custom Furniture &amp; Metal Fabrication | Flower Mound, TX</title>
+<meta name="description" content="Heirloom-quality custom furniture, decorative metalwork and trade hardware — made to specification in our own foundry. CAD-driven design managed from purchase order to shipping. A maker's partner for interior designers and the trade. Flower Mound, TX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1815; --ink-deep:#131210; --panel:#211E1A; --panel2:#26221D;
+  --brass:#B08D57; --brass-bright:#D6B57E; --brass-deep:#8F6F3F;
+  --ivory:#F3EDE1; --ivory-2:#CBC2B2; --muted:#8A8073;
+  --hair:rgba(176,141,87,.20); --hair-strong:rgba(176,141,87,.42);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--ivory-2);font-family:var(--sans);font-weight:300;line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.4rem,5vw,3rem)}
+.eyebrow{font-family:var(--sans);font-weight:400;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.8rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--brass);opacity:.7}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--ivory);line-height:1.06;letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.4vw,3.4rem)}
+em{font-style:italic;color:var(--brass-bright);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:400;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:1.05rem 2.1rem;border:1px solid var(--brass);cursor:pointer;transition:all .3s var(--ease)}
+.btn-gold{background:var(--brass);color:#1B140A}
+.btn-gold:hover{background:var(--brass-bright);border-color:var(--brass-bright);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ivory);border-color:var(--hair-strong)}
+.btn-line:hover{border-color:var(--brass);color:var(--brass-bright)}
+.section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,padding .4s;border-bottom:1px solid transparent;padding:.4rem 0}
+header.scrolled{background:rgba(26,24,21,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.32rem;color:var(--ivory);letter-spacing:.04em}
+.brand span{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--brass);margin-top:.28rem}
+.nav-links{display:flex;gap:2.2rem;align-items:center}
+.nav-links a{font-size:.82rem;letter-spacing:.06em;color:var(--ivory-2);transition:color .25s}
+.nav-links a:hover{color:var(--brass-bright)}
+.nav-cta{font-size:.74rem!important;letter-spacing:.14em;text-transform:uppercase;color:#1B140A!important;background:var(--brass);padding:.7rem 1.3rem;transition:.3s}
+.nav-cta:hover{background:var(--brass-bright)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:26px;height:1.5px;background:var(--ivory)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#000 center/cover no-repeat;transform:scale(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,18,16,.97) 0%,rgba(19,18,16,.86) 38%,rgba(19,18,16,.5) 78%,rgba(19,18,16,.34) 100%),linear-gradient(0deg,rgba(19,18,16,.92),transparent 50%)}
+.hero-inner{position:relative;z-index:2;padding-top:90px}
+.hero h1{font-size:clamp(3rem,7.4vw,6rem);margin:1.4rem 0 1.6rem;max-width:15ch}
+.hero p.lead{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:48ch;color:var(--ivory-2);margin-bottom:2.4rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-phone{margin-left:.4rem;font-size:.9rem;letter-spacing:.04em;color:var(--ivory)}
+.hero-phone b{color:var(--brass-bright);font-weight:400}
+.hero-mark{position:absolute;right:0;bottom:8vh;z-index:2;text-align:right;border-right:2px solid var(--brass);padding-right:1.2rem}
+.hero-mark b{font-family:var(--serif);font-size:2.2rem;color:var(--ivory);display:block;line-height:1.05}
+.hero-mark small{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* TRUST STRIP */
+.trust{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:var(--panel)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-top:2.2rem;padding-bottom:2.2rem}
+.trust div{text-align:center;padding:.4rem}
+.trust b{font-family:var(--serif);font-size:1.7rem;color:var(--brass-bright);display:block;line-height:1.15}
+.trust small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* SECTION HEAD */
+.head{max-width:56ch;margin-bottom:3.4rem}
+.head .eyebrow{margin-bottom:1.4rem}
+.head p{margin-top:1.2rem;color:var(--ivory-2);max-width:52ch}
+
+/* CAPABILITIES */
+.grid{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--ink);padding:2.4rem 2rem;transition:background .4s}
+.card:hover{background:var(--panel2)}
+.card .ic{width:34px;height:34px;color:var(--brass);margin-bottom:1.3rem}
+.card h3{font-size:1.5rem;margin-bottom:.6rem}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* MATERIALS / FINISHES */
+.materials{background:var(--panel)}
+.mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:1rem}
+.swatch{border:1px solid var(--hair);transition:.4s;background:var(--ink);overflow:hidden}
+.swatch:hover{border-color:var(--brass);transform:translateY(-4px)}
+.swatch .chip{height:110px;position:relative}
+.swatch .chip::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.18),transparent 55%);mix-blend-mode:overlay}
+.chip-brass{background:linear-gradient(135deg,#8F6F3F,#D6B57E 48%,#7A5D33)}
+.chip-bronze{background:linear-gradient(135deg,#4A3826,#8A6A44 50%,#3A2B1C)}
+.chip-black{background:linear-gradient(135deg,#20201F,#403c37 50%,#161513)}
+.chip-nickel{background:linear-gradient(135deg,#6E6E6C,#C7C6C0 52%,#585754)}
+.swatch .lbl{padding:1.2rem 1.4rem}
+.swatch .lbl .num{font-family:var(--serif);font-size:.9rem;color:var(--brass);letter-spacing:.2em}
+.swatch h3{font-size:1.28rem;margin:.4rem 0 .3rem}
+.swatch p{font-size:.82rem;color:var(--muted)}
+
+/* PROCESS split */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;border:1px solid var(--hair)}
+.split-vis{background:linear-gradient(150deg,#2A251E 0%,#171512 60%,#0F0E0C 100%);min-height:460px;position:relative;overflow:hidden;display:grid;place-items:center}
+.split-vis .mono{font-family:var(--serif);font-size:clamp(6rem,14vw,12rem);color:var(--brass);opacity:.14;line-height:.8;letter-spacing:-.04em;text-align:center;user-select:none}
+.split-vis .rule{position:absolute;left:2rem;right:2rem;bottom:2rem;display:flex;justify-content:space-between;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--brass);opacity:.8}
+.split-vis::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--hair) 1px,transparent 1px),linear-gradient(90deg,var(--hair) 1px,transparent 1px);background-size:44px 44px;opacity:.4;mask-image:radial-gradient(circle at 30% 30%,#000,transparent 75%)}
+.split-txt{padding:clamp(2.4rem,5vw,4rem);background:var(--panel2);display:flex;flex-direction:column;justify-content:center}
+.split-txt ol{list-style:none;counter-reset:step;margin-top:1.6rem}
+.split-txt li{counter-increment:step;padding:.95rem 0 .95rem 3rem;border-top:1px solid var(--hair);position:relative;font-size:.98rem;color:var(--ivory-2)}
+.split-txt li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:.9rem;font-family:var(--serif);font-size:1rem;color:var(--brass);letter-spacing:.06em}
+.split-txt li b{color:var(--ivory);font-weight:500;font-family:var(--serif);font-size:1.15rem;display:block;letter-spacing:.01em}
+
+/* TRADE */
+.trade{background:var(--ink-deep)}
+.trade-inner{display:grid;grid-template-columns:1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center;border:1px solid var(--hair);background:linear-gradient(120deg,#221D16,#141210);padding:clamp(2.4rem,5vw,4rem)}
+.trade-inner h2{margin:1.2rem 0}
+.trade-list{list-style:none;display:grid;gap:.9rem}
+.trade-list li{display:flex;gap:.9rem;align-items:flex-start;font-size:.96rem;color:var(--ivory-2)}
+.trade-list li::before{content:"";width:7px;height:7px;background:var(--brass);margin-top:.6rem;flex:0 0 auto;transform:rotate(45deg)}
+
+/* REVIEWS */
+.reviews{text-align:center}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:3rem;text-align:left;max-width:900px;margin-left:auto;margin-right:auto}
+.quote{border:1px solid var(--hair);padding:2.4rem;background:var(--panel);transition:.4s;position:relative}
+.quote:hover{border-color:var(--hair-strong)}
+.quote .mk{font-family:var(--serif);font-size:3.4rem;color:var(--brass);opacity:.35;line-height:.4;display:block;margin-bottom:.6rem}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.34rem;line-height:1.5;color:var(--ivory);margin-bottom:1.2rem}
+.quote cite{font-style:normal;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}
+
+/* CTA BAND */
+.band{background:linear-gradient(135deg,#1E1811,#131210);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);text-align:center}
+.band h2{margin-bottom:1.4rem}
+.band p{max-width:46ch;margin:0 auto 2.2rem;color:var(--ivory-2)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.info b{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:1.6rem 0 .4rem}
+.info a,.info span{font-size:1.15rem;color:var(--ivory);font-family:var(--serif)}
+.info .big{font-size:1.9rem}
+
+/* FOOTER */
+footer{border-top:1px solid var(--hair);padding:3rem 0 2.4rem;background:var(--panel)}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.4rem}
+.foot small{font-size:.76rem;color:var(--muted);letter-spacing:.04em}
+.foot .contact-line{font-size:.76rem;color:var(--ivory-2);letter-spacing:.04em}
+.foot .contact-line a{color:var(--brass-bright)}
+.foot .ts{font-size:.7rem;color:var(--muted);letter-spacing:.1em}
+.foot .ts a{color:var(--brass)}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--panel);flex-direction:column;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s var(--ease);border-left:1px solid var(--hair)}
+  .nav-links.open{transform:none}
+  .burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .grid-3{grid-template-columns:1fr}
+  .mat-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .split-vis{min-height:280px}
+  .trade-inner{grid-template-columns:1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:1.6rem}
+  .hero-mark{display:none}
+}
+@media(max-width:520px){.mat-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><b>S&amp;L Designs</b><span>Furniture &amp; Metalwork</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="#work">What We Make</a>
+      <a href="#finishes">Finishes</a>
+      <a href="#process">Process</a>
+      <a href="#trade">Trade</a>
+      <a href="tel:2147426417" class="nav-cta">Request a Quote</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Custom Furniture &amp; Metal Fabrication · Flower Mound, TX</span>
+    <h1>Crafted to <em>specification</em>.</h1>
+    <p class="lead">Heirloom-quality metalwork and furniture, made to order in our own foundry — CAD-driven, project-managed from purchase order to shipping. A maker's partner for interior designers and the trade.</p>
+    <div class="hero-cta">
+      <a href="tel:2147426417" class="btn btn-gold">Request a Quote</a>
+      <a href="#work" class="btn btn-line">See What We Make</a>
+      <span class="hero-phone">or call <b>(214) 742-6417</b></span>
+    </div>
+  </div>
+  <div class="hero-mark">
+    <b>Our Own<br>Foundry</b>
+    <small>Cast &amp; Fabricated In-House</small>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>In-House Foundry</b><small>Cast to Your Spec</small></div>
+    <div class="reveal"><b>CAD-Driven</b><small>Drawn Before It's Built</small></div>
+    <div class="reveal"><b>PO → Shipping</b><small>One Project Manager</small></div>
+    <div class="reveal"><b>Trade Line</b><small>Signature Hardware</small></div>
+  </div>
+</section>
+
+<!-- WHAT WE MAKE -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What We Make</span>
+      <h2>Metal and wood, <em>made to order</em>.</h2>
+      <p>From a single statement piece to a full trade specification, everything is built to your drawings and your dimensions — nothing off a shelf, nothing compromised.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M5 17v3M19 17v3M3 12h18"/></svg><h3>Custom Furniture</h3><p>Tables, consoles, casegoods and statement pieces in metal and wood — designed and built to your exact specification.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2l3 5 5 .8-3.6 3.6.9 5.1L12 19l-5.3 2.5.9-5.1L4 12.8 9 12z"/></svg><h3>Decorative Metalwork</h3><p>Sculptural, architectural and ornamental metal — railings, screens, accents and bespoke commissions cast in our foundry.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 7h16M4 12h16M4 17h16"/><circle cx="8" cy="7" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="1.4" fill="currentColor" stroke="none"/></svg><h3>Functional Fabrication</h3><p>Purpose-built structural and functional metal — engineered to perform and finished to be seen.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 6h18M6 6v12M18 6v12M3 18h18"/><circle cx="12" cy="6" r="1.6"/></svg><h3>Drapery Hardware</h3><p>Motorized and manual drapery hardware — rods, rings, finials and brackets, tailored to the room and the reveal.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-4M12 12h5"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></svg><h3>Custom Finishes</h3><p>Hand-applied patinas and plating across brass, bronze, blackened steel and nickel — matched to your palette.</p></div>
+      <div class="card reveal"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11M4 4l5 5"/></svg><h3>Made-to-Spec Pieces</h3><p>Have a drawing or an idea? We translate it into CAD, prototype it, and produce it to specification for the trade.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINISHES -->
+<section class="section materials" id="finishes">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Materials &amp; Finishes</span>
+      <h2>The finish is where it <em>becomes yours</em>.</h2>
+      <p>Because we cast and finish in-house, the options are wide and the match is exact — a range that clients and designers consistently call remarkable.</p>
+    </div>
+    <div class="mat-grid">
+      <div class="swatch reveal"><div class="chip chip-brass"></div><div class="lbl"><div class="num">01</div><h3>Aged Brass</h3><p>Warm, living finish that patinas gracefully over time.</p></div></div>
+      <div class="swatch reveal"><div class="chip chip-bronze"></div><div class="lbl"><div class="num">02</div><h3>Oil-Rubbed Bronze</h3><p>Deep, hand-rubbed tone with rich highlighted edges.</p></div></div>
+      <div class="swatch reveal"><div class="chip chip-black"></div><div class="lbl"><div class="num">03</div><h3>Blackened Steel</h3><p>Matte, architectural black — quietly industrial.</p></div></div>
+      <div class="swatch reveal"><div class="chip chip-nickel"></div><div class="lbl"><div class="num">04</div><h3>Satin Nickel</h3><p>Cool, refined sheen for a lighter, modern palette.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-vis">
+        <div class="mono">S&amp;L</div>
+        <div class="rule"><span>Design</span><span>Cast</span><span>Finish</span><span>Ship</span></div>
+      </div>
+      <div class="split-txt">
+        <span class="eyebrow">How We Build</span>
+        <h2 style="margin-top:1.2rem">From drawing to <em>doorstep</em>.</h2>
+        <ol>
+          <li><b>Design &amp; CAD</b>We draw every piece before we build it — dimensions, tolerances and details confirmed against your specification.</li>
+          <li><b>Cast &amp; Fabricate</b>Our own foundry lets us customize and build to spec, in-house, without waiting on outside vendors.</li>
+          <li><b>Finish by Hand</b>Patinas, plating and custom colors are applied and matched by hand until it's exactly right.</li>
+          <li><b>Managed to Shipping</b>One point of contact follows the project from purchase order all the way through delivery.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reveal" style="display:inline-block">
+      <span class="eyebrow" style="justify-content:center">In Their Words</span>
+      <h2 style="margin:1.2rem 0 .4rem">Trusted by <em>designers</em> and the trade.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="quote reveal"><span class="mk">&ldquo;</span><p>They have their own foundry, which lets them customize and build to your specs — with CAD drawings, and they follow the project from purchase order all the way to shipping.</p><cite>— Sally, Interior Designer</cite></div>
+      <div class="quote reveal"><span class="mk">&ldquo;</span><p>A fabulous, well-priced trade hardware line. The finishes are amazing and there are so many options — and the customer service is excellent.</p><cite>— Scott, Trade Partner</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRADE -->
+<section class="section trade" id="trade">
+  <div class="wrap">
+    <div class="trade-inner reveal">
+      <div>
+        <span class="eyebrow">For Designers &amp; the Trade</span>
+        <h2>A maker built for <em>your</em> specification.</h2>
+        <p>We work the way the trade needs us to — drawings first, one project manager, and a signature hardware line with a depth of finishes that makes the specifying easy.</p>
+      </div>
+      <ul class="trade-list">
+        <li>Signature trade hardware line — well-priced, deeply optioned.</li>
+        <li>CAD drawings for approval before anything is fabricated.</li>
+        <li>Custom finishes matched to your palette and samples.</li>
+        <li>Managed PO-to-shipping with a single point of contact.</li>
+        <li>Made-to-spec commissions from a single sketch or drawing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Start a Project</span>
+    <h2 style="margin-top:1.2rem">Have a piece in <em>mind</em>?</h2>
+    <p>Send us the drawing, the dimensions, or just the idea — we'll turn it into a quote and a plan. Trade inquiries welcome.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="tel:2147426417" class="btn btn-gold">Request a Quote</a>
+      <a href="tel:2147426417" class="btn btn-line">(214) 742-6417</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="margin:1.2rem 0 1rem">Let's make<br>something lasting.</h2>
+      <p style="color:var(--ivory-2)">Custom furniture, decorative and functional metal fabrication, drapery hardware and made-to-spec pieces — designed, cast and finished in Flower Mound, Texas.</p>
+    </div>
+    <div class="info reveal">
+      <b>Request a Quote</b>
+      <a class="big" href="tel:2147426417">(214) 742-6417</a>
+      <b>Studio &amp; Foundry</b>
+      <span>Flower Mound, Texas</span>
+      <b>We Serve</b>
+      <span>Interior Designers &amp; the Trade</span>
+      <b>Inquiries</b>
+      <span>Custom &amp; Made-to-Spec Welcome</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <small>© 2026 S&amp;L Designs · Custom Furniture &amp; Metal Fabrication · Flower Mound, TX</small>
+      <div class="contact-line" style="margin-top:.5rem"><a href="tel:2147426417">(214) 742-6417</a> · Flower Mound, Texas</div>
+    </div>
+    <span class="ts">Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a></span>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*80)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

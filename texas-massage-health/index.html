@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas Massage Health and Recovery — Medical &amp; Therapeutic Massage | Highland Village, TX</title>
+<meta name="description" content="Clinical, therapeutic massage for real recovery in Highland Village, TX. Pain relief, injury rehabilitation, post-surgical lymphatic drainage, deep tissue & cupping. Women-owned, veteran-friendly, VA referrals welcome. Rated 4.9★ across 48 Google reviews. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --stone:#F5F3EE; --paper:#fff; --ink:#1E2E2B; --ink-2:#4E605C; --muted:#8A968F;
+  --teal:#3E8E82; --teal-deep:#2C6A61; --teal-soft:#E6F0EE;
+  --slate:#2A3B3E; --slate-2:#33484C; --sage:#EEF2ED;
+  --gold:#C79A54; --hair:#E6E2D8;
+  --disp:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  --maxw:1160px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--stone);color:var(--ink-2);font-family:var(--sans);font-weight:400;line-height:1.68;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{font-family:var(--disp);font-weight:500;color:var(--ink);line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.2vw,3.05rem)}
+.disp{font-family:var(--disp)}
+em{font-style:italic;color:var(--teal)}
+.eyebrow{font-weight:600;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-deep);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:600;font-size:.88rem;letter-spacing:.01em;padding:.95rem 1.8rem;border-radius:10px;cursor:pointer;transition:all .3s var(--ease);border:2px solid transparent}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-deep);transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(44,106,97,.55)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--teal);color:var(--teal)}
+.btn-white{background:#fff;color:var(--slate);border-color:#fff}
+.btn-white:hover{background:var(--sage);transform:translateY(-2px)}
+.section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:52ch;margin-bottom:3rem}
+.head .eyebrow{margin-bottom:1rem}
+.head p{margin-top:1rem;color:var(--ink-2)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.35s;padding:.5rem 0}
+header.scrolled{background:rgba(245,243,238,.92);backdrop-filter:blur(12px);box-shadow:0 6px 30px rgba(30,46,43,.07)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--disp);font-weight:600;font-size:1.22rem;color:var(--ink);letter-spacing:-.01em}
+.brand .dot{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--teal),var(--teal-deep));color:#fff;display:grid;place-items:center}
+.nav-links{display:flex;gap:1.9rem;align-items:center}
+.nav-links a{font-weight:500;font-size:.92rem;color:var(--ink-2);transition:.25s}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--teal);color:#fff!important;padding:.62rem 1.2rem;border-radius:10px;font-weight:600;font-size:.85rem}
+.nav-cta:hover{background:var(--teal-deep)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:2.5px;background:var(--ink);border-radius:2px}
+
+.hero{position:relative;padding:calc(72px + clamp(3rem,7vw,6rem)) 0 clamp(3rem,7vw,6rem)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero .badges{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.3rem}
+.chip{font-size:.72rem;font-weight:600;letter-spacing:.03em;background:var(--teal-soft);border:1px solid #D3E4E0;color:var(--teal-deep);padding:.38rem .8rem;border-radius:100px}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.2rem);margin:.4rem 0 1.3rem}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);max-width:46ch;margin-bottom:2rem;color:var(--ink-2)}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-img{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px -32px rgba(44,106,97,.5);aspect-ratio:5/4}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-18px;bottom:24px;background:#fff;border-radius:16px;padding:1rem 1.3rem;box-shadow:0 18px 40px -18px rgba(30,46,43,.45);display:flex;align-items:center;gap:.85rem}
+.hero-badge .n{font-family:var(--disp);font-size:2rem;color:var(--teal);line-height:1}
+.hero-badge .stars{color:var(--gold);font-size:.85rem;letter-spacing:.1em}
+.hero-badge small{font-size:.72rem;color:var(--muted);display:block}
+
+.trust{background:var(--slate);color:#D5E2DF}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.4rem 0}
+.trust div{text-align:center}
+.trust b{font-family:var(--disp);font-weight:500;font-size:2.1rem;color:#fff;display:block;line-height:1}
+.trust small{font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;color:#9DBAB4}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc{background:var(--paper);border:1px solid var(--hair);border-radius:18px;padding:2.2rem 1.9rem;transition:.35s}
+.svc:hover{transform:translateY(-5px);box-shadow:0 24px 48px -28px rgba(44,106,97,.4);border-color:var(--teal)}
+.svc .ic{width:54px;height:54px;border-radius:14px;background:var(--teal-soft);color:var(--teal-deep);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc h3{font-size:1.4rem;margin-bottom:.45rem}
+.svc p{font-size:.93rem;color:var(--ink-2)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.split-visual{border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:linear-gradient(150deg,var(--sage),var(--teal-soft));border:1px solid var(--hair);position:relative;box-shadow:0 24px 54px -30px rgba(44,106,97,.4)}
+.split-visual .quote{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,4vw,3rem)}
+.split-visual .mark{font-family:var(--disp);font-size:4rem;color:var(--teal);line-height:.5;margin-bottom:.6rem;opacity:.5}
+.split-visual blockquote{font-family:var(--disp);font-size:clamp(1.3rem,2.2vw,1.7rem);font-style:italic;color:var(--slate);line-height:1.35}
+.split-visual .attr{margin-top:1.2rem;font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--teal-deep);letter-spacing:.03em}
+.split ul{list-style:none;margin-top:1.5rem}
+.split li{padding:.8rem 0;border-top:1px solid var(--hair);display:flex;gap:.8rem;align-items:flex-start;color:var(--ink);font-size:.98rem;font-weight:500}
+.split li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:var(--teal-soft);color:var(--teal-deep);border-radius:50%;font-size:.78rem;font-weight:800;flex:0 0 auto;margin-top:.15rem}
+.split li b{color:var(--ink);font-weight:600}
+
+.vet{background:var(--teal-deep);color:#DCEAE7;border-radius:22px;padding:clamp(2.4rem,5vw,3.4rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
+.vet h2{color:#fff;font-size:clamp(1.7rem,3.2vw,2.3rem)}
+.vet p{max-width:52ch;margin-top:.8rem;color:#C9DDD9}
+.vet .badge-ico{width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff}
+
+.reviews{background:var(--slate);color:#D5E2DF;text-align:center}
+.reviews h2{color:#fff}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem;text-align:left}
+.rev{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:2rem}
+.rev .stars{color:var(--gold);letter-spacing:.1em;margin-bottom:.9rem}
+.rev p{font-family:var(--disp);font-size:1.12rem;font-style:italic;line-height:1.5;color:#fff;margin-bottom:1rem}
+.rev cite{font-style:normal;font-size:.8rem;color:#9DBAB4;font-weight:600}
+
+.band{text-align:center}
+.band-inner{background:linear-gradient(135deg,var(--teal),var(--teal-deep));border-radius:28px;padding:clamp(2.6rem,5vw,4.5rem)}
+.band h2{color:#fff}
+.band p{color:#D9EAE6;max-width:46ch;margin:1rem auto 2rem}
+
+footer{background:var(--ink);color:#AAB9B4;padding:3rem 0 2.2rem}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot h4{font-family:var(--disp);color:#fff;font-size:1.25rem;margin-bottom:.6rem}
+.foot .lbl{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;display:block}
+.foot a{display:block;padding:.2rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--teal)}
+.foot .big{font-family:var(--disp);color:#fff;font-size:1.4rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--teal)}
+.foot-note{font-size:.8rem;color:var(--muted);margin-top:.6rem}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--paper);flex-direction:column;justify-content:center;gap:1.8rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.1)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .hero-grid{grid-template-columns:1fr}.hero-img{order:-1}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.6rem}
+  .svc-grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-visual{order:-1}
+  .vet{grid-template-columns:1fr;text-align:center}.vet .badge-ico{margin:0 auto}
+  .rev-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9C1 8 3 4.5 6.5 4.5 9 4.5 12 7 12 7s3-2.5 5.5-2.5C21 4.5 23 8 21.5 12 19 16.5 12 21 12 21z"/></svg></span> Texas Massage Health &amp; Recovery</a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#veterans">Veterans</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:6823749174" class="nav-cta">Book Online</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badges">
+        <span class="chip">Medical &amp; Therapeutic</span>
+        <span class="chip">Women-Owned</span>
+        <span class="chip">Veteran-Friendly · VA Referrals</span>
+      </div>
+      <h1>Therapeutic massage for <em>real recovery</em>.</h1>
+      <p class="lead">Clinical, results-driven bodywork in Highland Village — for pain relief, injury rehabilitation and post-surgical recovery. Not a frilly spa day; a treatment plan that actually gets you back to yourself.</p>
+      <div class="hero-cta">
+        <a href="tel:6823749174" class="btn btn-teal">Book Online</a>
+        <a href="tel:6823749174" class="btn btn-line">Call (682) 374-9174</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero.jpg" alt="Calm, clean clinical wellness treatment room at Texas Massage Health and Recovery">
+      <div class="hero-badge">
+        <div class="n">4.9</div>
+        <div><div class="stars">★★★★★</div><small>48 Google reviews</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.9★</b><small>Google Rating</small></div>
+    <div class="reveal"><b>48</b><small>Verified Reviews</small></div>
+    <div class="reveal"><b>Women</b><small>Owned &amp; Operated</small></div>
+    <div class="reveal"><b>VA</b><small>Referrals Welcome</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Treatments</span>
+      <h2>Massage with a <em>clinical</em> purpose.</h2>
+      <p>Every session is built around your body's needs — assessing the source of pain, treating it directly, and sending you home with a plan to keep it from coming back.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9.5-9C1 8 3 4.5 6.5 4.5 9 4.5 12 7 12 7s3-2.5 5.5-2.5C21 4.5 23 8 21.5 12 19 16.5 12 21 12 21z"/></svg></div><h3>Medical &amp; Therapeutic Massage</h3><p>Targeted, condition-focused bodywork designed to treat the root cause of pain — not just chase symptoms for an hour.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></div><h3>Pain &amp; Muscle-Tension Relief</h3><p>Relief from chronic tightness, headaches and stress-held tension — so you leave with fixed muscles and no residual ache.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Injury Recovery &amp; Rehab</h3><p>Soft-tissue recovery after accidents, sports strains and overuse — with home-care guidance to speed your rehabilitation.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Post-Surgical Lymphatic Drainage</h3><p>Gentle, specialized drainage to reduce swelling, support healing and improve comfort during post-operative recovery.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v6a6 6 0 0012 0V3"/><path d="M6 21h12"/></svg></div><h3>Deep Tissue Massage</h3><p>Firm, focused pressure to release deep knots and restore mobility — expertly dosed so it works without leaving you sore.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="15" r="3"/></svg></div><h3>Cupping Therapy</h3><p>Decompression cupping to boost circulation, loosen fascia and release stubborn tension the hands alone can't reach.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap split">
+    <div class="split-visual reveal">
+      <div class="quote">
+        <div class="mark">&ldquo;</div>
+        <blockquote>My appointments always end with stressed muscles fixed and no residual pain afterward.</blockquote>
+        <div class="attr">— Deidre, Google Review</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why Patients Choose Us</span>
+      <h2 style="margin:1rem 0">Credible care that treats the <em>cause</em>.</h2>
+      <p>A 4.9-star reputation isn't built on candles and quiet music — it's built on people getting better. Formerly Highland Village Massage &amp; Bodywork, now <b style="color:var(--ink)">Texas Massage Health and Recovery</b>, our focus is real, lasting outcomes.</p>
+      <ul>
+        <li><b>Clinical, outcome-focused approach</b> — we assess, treat and re-check, not just relax.</li>
+        <li><b>Injury &amp; accident recovery</b> — soft-tissue rehab with real home-care guidance.</li>
+        <li><b>Women-owned &amp; veteran-friendly</b> — VA referrals welcomed and understood.</li>
+        <li><b>Specialized techniques</b> — deep tissue, cupping and post-surgical lymphatic drainage.</li>
+        <li><b>Easy online booking</b> — reserve the time that fits your recovery, not ours.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VETERANS -->
+<section class="section" id="veterans">
+  <div class="wrap">
+    <div class="vet reveal">
+      <div>
+        <span class="eyebrow" style="color:#fff">Proudly Veteran-Friendly</span>
+        <h2 style="margin-top:.7rem">We honor those who served.</h2>
+        <p>As a women-owned clinic, we welcome VA referrals and work with veterans on real recovery — from service-related injuries to chronic pain. If you're navigating VA care, reach out and we'll help you get started.</p>
+        <div style="margin-top:1.6rem"><a href="tel:6823749174" class="btn btn-white">Ask About VA Referrals</a></div>
+      </div>
+      <div class="badge-ico">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 5 5.6.6-4 4 1.1 5.4L12 19.5 6.9 22 8 16.6l-4-4 5.6-.6z"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold);justify-content:center">4.9 ★ · 48 Reviews</span>
+    <h2 style="margin-top:1rem">Real recovery, in their words.</h2>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Kelly helped me recover from soft-tissue injuries after a car accident and recommended home treatments for the pain."</p><cite>— Heather</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"My appointments always end with stressed muscles fixed and no residual pain afterward."</p><cite>— Deidre</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"So talented — made me feel completely relaxed and my pain eased. I can't recommend them enough."</p><cite>— Trish</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <div class="band-inner">
+      <h2>Ready to feel better?</h2>
+      <p>Book online or call to schedule your session. Tell us what hurts — we'll build a treatment plan around getting you back to yourself.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:6823749174" class="btn btn-white">Book Online</a>
+        <a href="tel:6823749174" class="btn btn-line" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.4)">(682) 374-9174</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Texas Massage Health &amp; Recovery</h4>
+        <p style="font-size:.92rem">Clinical, therapeutic massage for real recovery in Highland Village, TX. Women-owned &amp; veteran-friendly.</p>
+        <p class="foot-note">Formerly Highland Village Massage &amp; Bodywork.</p>
+      </div>
+      <div>
+        <span class="lbl">Visit</span>
+        <a href="https://maps.google.com/?q=1100+Cottonwood+Creek+Ste+127+Highland+Village+TX+75077" target="_blank" rel="noopener">1100 Cottonwood Creek,<br>Ste 127<br>Highland Village, TX 75077</a>
+      </div>
+      <div>
+        <span class="lbl">Book &amp; Call</span>
+        <a href="tel:6823749174" class="big">(682) 374-9174</a>
+        <a href="tel:6823749174">Book online anytime</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Texas Massage Health and Recovery · Highland Village, TX</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a> · (682) 374-9174 · Highland Village, TX</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>30));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

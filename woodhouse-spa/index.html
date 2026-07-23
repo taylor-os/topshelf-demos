@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodhouse Spa — Highland Village | Massage, Facials &amp; Day-Spa Retreats</title>
+<meta name="description" content="An escape for the senses. Upscale day spa in Highland Village, TX — therapeutic massage, facials, nail services, waxing & spa retreats. Rated 4.8★ across 405 reviews. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#3B2233; --plum-2:#4A2E43; --plum-soft:#5C3B52;
+  --ivory:#FBF7F3; --ivory-2:#F3EBE5; --blush:#E8D3D9; --mauve:#B98F9E;
+  --gold:#C4A45E; --gold-bright:#DBBE7E; --gold-deep:#A98844;
+  --ink:#40313A; --muted:#8E7A85; --cream-2:#E9DFE4;
+  --hair:rgba(196,164,94,.22); --hair-strong:rgba(196,164,94,.42);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --maxw:1160px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.75;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.4rem,5vw,3rem)}
+.eyebrow{font-family:var(--sans);font-weight:400;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);display:inline-flex;align-items:center;gap:.8rem}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--gold);opacity:.75}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--plum);line-height:1.08;letter-spacing:-.005em}
+h2{font-size:clamp(2.1rem,4.4vw,3.4rem)}
+em{font-style:italic;color:var(--gold-deep);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:400;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:1.05rem 2.1rem;border:1px solid var(--gold);cursor:pointer;transition:all .3s var(--ease);border-radius:2px}
+.btn-gold{background:var(--gold);color:#2B1D0A}
+.btn-gold:hover{background:var(--gold-bright);border-color:var(--gold-bright);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--plum);border-color:var(--hair-strong)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-deep)}
+.btn-ivory{background:var(--ivory);color:var(--plum);border-color:var(--ivory)}
+.btn-ivory:hover{background:#fff;transform:translateY(-2px)}
+.section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:56ch;margin-bottom:3.4rem}
+.head .eyebrow{margin-bottom:1.4rem}
+.head p{margin-top:1.2rem;color:var(--muted);max-width:52ch}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,box-shadow .4s,padding .4s;padding:.4rem 0}
+header.scrolled{background:rgba(251,247,243,.9);backdrop-filter:blur(14px);box-shadow:0 6px 34px rgba(59,34,51,.09)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.34rem;color:var(--plum);letter-spacing:.02em}
+.brand span{font-size:.58rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-deep);margin-top:.3rem}
+.nav-links{display:flex;gap:2.1rem;align-items:center}
+.nav-links a{font-size:.86rem;letter-spacing:.05em;color:var(--ink);transition:color .25s}
+.nav-links a:hover{color:var(--gold-deep)}
+.nav-cta{font-size:.74rem!important;letter-spacing:.14em;text-transform:uppercase;color:#2B1D0A!important;background:var(--gold);padding:.72rem 1.3rem;border-radius:2px;transition:.3s}
+.nav-cta:hover{background:var(--gold-bright)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:26px;height:1.6px;background:var(--plum);border-radius:2px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#2A1826 center/cover no-repeat;transform:scale(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,24,38,.94) 0%,rgba(42,24,38,.82) 40%,rgba(42,24,38,.42) 80%,rgba(42,24,38,.28) 100%),linear-gradient(0deg,rgba(42,24,38,.85),transparent 55%)}
+.hero-inner{position:relative;z-index:2;padding-top:90px}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero .eyebrow::before{background:var(--gold-bright)}
+.hero h1{font-size:clamp(3rem,7.2vw,5.8rem);color:var(--ivory);margin:1.4rem 0 1.6rem;max-width:15ch}
+.hero h1 em{color:var(--gold-bright)}
+.hero p.lead{font-size:clamp(1.05rem,1.5vw,1.22rem);max-width:46ch;color:var(--cream-2);margin-bottom:2.4rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-phone{margin-left:.4rem;font-size:.9rem;letter-spacing:.04em;color:var(--cream-2)}
+.hero-phone b{color:var(--gold-bright);font-weight:400}
+.rating-badge{position:absolute;right:0;bottom:9vh;z-index:2;text-align:right;border-right:2px solid var(--gold);padding-right:1.2rem}
+.rating-badge .stars{color:var(--gold-bright);letter-spacing:.2em;font-size:1rem}
+.rating-badge b{font-family:var(--serif);font-size:2.6rem;color:var(--ivory);display:block;line-height:1}
+.rating-badge small{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mauve)}
+
+/* TRUST STRIP */
+.trust{background:var(--plum);color:var(--cream-2)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-top:2.6rem;padding-bottom:2.6rem}
+.trust div{text-align:center;padding:.4rem}
+.trust b{font-family:var(--serif);font-weight:500;font-size:2.1rem;color:var(--gold-bright);display:block;line-height:1.1}
+.trust small{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mauve)}
+
+/* SERVICES */
+.grid{display:grid;gap:1.4rem;grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--hair);border-radius:14px;padding:2.4rem 2rem;transition:.4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 54px -30px rgba(59,34,51,.4);border-color:transparent}
+.card .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;margin-bottom:1.3rem;background:var(--ivory-2)}
+.card .ic svg{width:26px;height:26px;color:var(--gold-deep)}
+.card h3{font-size:1.55rem;margin-bottom:.5rem}
+.card p{font-size:.94rem;color:var(--muted)}
+.card .tag{margin-top:1.2rem;font-size:.78rem;font-weight:400;letter-spacing:.06em;color:var(--gold-deep)}
+
+/* EXPERIENCE split */
+.expr{background:var(--ivory-2)}
+.split{display:grid;grid-template-columns:.95fr 1.05fr;gap:0;align-items:stretch;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -40px rgba(59,34,51,.5)}
+.split-img{background:linear-gradient(150deg,var(--plum-2),var(--plum) 55%,#2A1826);min-height:460px;position:relative;display:flex;align-items:flex-end;padding:2.6rem}
+.split-img::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(120px 120px at 78% 24%,rgba(219,190,126,.28),transparent 70%),
+  radial-gradient(200px 200px at 20% 88%,rgba(185,143,158,.22),transparent 70%)}
+.split-img .stone{position:absolute;top:2.4rem;left:2.6rem;display:flex;flex-direction:column;gap:.7rem}
+.split-img .stone i{display:block;width:clamp(46px,7vw,66px);height:clamp(14px,2vw,20px);border-radius:100px;background:linear-gradient(120deg,rgba(251,247,243,.16),rgba(251,247,243,.04));box-shadow:inset 0 1px 2px rgba(255,255,255,.14)}
+.split-img .stone i:nth-child(2){width:clamp(56px,9vw,86px);opacity:.8}
+.split-img .stone i:nth-child(3){width:clamp(40px,6vw,54px);opacity:.6}
+.split-img figcaption{position:relative;z-index:1;font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--ivory);line-height:1.3;max-width:20ch}
+.split-txt{padding:clamp(2.4rem,5vw,4rem);background:#fff;display:flex;flex-direction:column;justify-content:center}
+.split-txt ul{list-style:none;margin-top:1.6rem}
+.split-txt li{padding:.9rem 0;border-top:1px solid var(--hair);display:flex;gap:.9rem;align-items:flex-start;font-size:.98rem;color:var(--ink)}
+.split-txt li::before{content:"";width:8px;height:8px;background:var(--gold);margin-top:.55rem;flex:0 0 auto;transform:rotate(45deg);border-radius:1px}
+
+/* RETREATS band */
+.retreat{background:var(--plum)}
+.retreat .head p{color:var(--cream-2)}
+.retreat h2,.retreat .eyebrow{color:var(--ivory)}
+.retreat .eyebrow{color:var(--gold-bright)}
+.retreat .eyebrow::before{background:var(--gold-bright)}
+.ret-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1rem}
+.ret{border:1px solid rgba(219,190,126,.24);border-radius:14px;padding:2.2rem 1.9rem;background:rgba(255,255,255,.03);transition:.4s}
+.ret:hover{border-color:var(--gold);transform:translateY(-4px);background:rgba(255,255,255,.05)}
+.ret .num{font-family:var(--serif);font-size:.95rem;color:var(--gold-bright);letter-spacing:.2em}
+.ret h3{color:var(--ivory);font-size:1.5rem;margin:.7rem 0 .5rem}
+.ret p{font-size:.9rem;color:var(--cream-2)}
+
+/* REVIEWS */
+.reviews{text-align:center}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem;text-align:left}
+.quote{border:1px solid var(--hair);border-radius:14px;padding:2.2rem;background:#fff;transition:.4s}
+.quote:hover{border-color:var(--hair-strong);box-shadow:0 20px 44px -30px rgba(59,34,51,.4)}
+.quote .stars{color:var(--gold);letter-spacing:.18em;margin-bottom:1rem}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.26rem;line-height:1.5;color:var(--plum);margin-bottom:1.2rem}
+.quote cite{font-style:normal;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep)}
+
+/* CTA BAND */
+.band{text-align:center}
+.band-inner{background:linear-gradient(135deg,var(--plum-2),#2A1826);border-radius:26px;padding:clamp(2.8rem,5.5vw,4.8rem)}
+.band h2{color:var(--ivory);margin-bottom:1.2rem}
+.band h2 em{color:var(--gold-bright)}
+.band p{max-width:46ch;margin:0 auto 2.2rem;color:var(--cream-2)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.info b{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:1.6rem 0 .4rem}
+.info a,.info span{font-size:1.16rem;color:var(--plum);font-family:var(--serif)}
+.info .big{font-size:1.95rem}
+
+/* FOOTER */
+footer{background:var(--plum);color:var(--cream-2);padding:3.2rem 0 2.4rem}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.4rem}
+.foot small{font-size:.76rem;color:var(--mauve);letter-spacing:.04em}
+.foot .ts{font-size:.72rem;color:var(--mauve);letter-spacing:.08em}
+.foot .ts a{color:var(--gold-bright)}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--ivory);flex-direction:column;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(59,34,51,.12)}
+  .nav-links.open{transform:none}
+  .burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.6rem}
+  .grid{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .split-img{min-height:300px}
+  .ret-grid{grid-template-columns:1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:1.6rem}
+  .rating-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><b>Woodhouse Spa</b><span>Highland Village</span></a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#experience">The Experience</a>
+      <a href="#retreats">Retreats</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:8174381772" class="nav-cta">Book · (817) 438-1772</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Upscale Day Spa · Highland Village, TX</span>
+    <h1>An escape for the <em>senses</em>.</h1>
+    <p class="lead">Step away from the noise and into calm. Therapeutic massage, restorative facials, and unhurried spa retreats — thoughtful, intentional care in a space designed to melt the day away.</p>
+    <div class="hero-cta">
+      <a href="https://woodhousespas.com/highland-village" class="btn btn-gold">Book Your Escape</a>
+      <a href="tel:8174381772" class="btn btn-line" style="color:var(--ivory);border-color:rgba(219,190,126,.5)">Call Now</a>
+      <span class="hero-phone">or dial <b>(817) 438-1772</b></span>
+    </div>
+  </div>
+  <div class="rating-badge">
+    <div class="stars">★★★★★</div>
+    <b>4.8</b>
+    <small>405 Google Reviews</small>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.8★</b><small>Google Rating</small></div>
+    <div class="reveal"><b>405</b><small>Guest Reviews</small></div>
+    <div class="reveal"><b>6+</b><small>Signature Treatments</small></div>
+    <div class="reveal"><b>7 Days</b><small>Open All Week</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Care for the body, <em>calm</em> for the mind.</h2>
+      <p>From a deep-tissue reset to a glow-restoring facial, every treatment is tailored to you — delivered with the intentional, professional touch our guests return for again and again.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 14c3-4 13-4 16 0"/><path d="M7 14c1.5-2 8.5-2 10 0"/><circle cx="12" cy="9" r="2"/></svg></div>
+        <h3>Therapeutic Massage</h3>
+        <p>Deep tissue, hot stone, maternity, and head &amp; neck — expert bodywork that releases tension and restores you head to toe.</p>
+        <div class="tag">Deep tissue · Hot stone · Maternity</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"/><path d="M9 10a1 1 0 000 .01M15 10a1 1 0 000 .01"/><path d="M9 15c1.5 1.5 4.5 1.5 6 0"/></svg></div>
+        <h3>Facials &amp; Skincare</h3>
+        <p>Customized facials and results-driven skincare that leave your complexion refreshed, radiant, and deeply hydrated.</p>
+        <div class="tag">Personalized to your skin</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 3l-2 9a4 4 0 008 0l-2-9"/><path d="M6 20h12"/></svg></div>
+        <h3>Nail Services</h3>
+        <p>Meticulous manicures and pedicures in a serene, unhurried setting — the finishing touch to a perfect day away.</p>
+        <div class="tag">Manicure · Pedicure</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 12h16"/><path d="M6 8l12 8M6 16l12-8"/></svg></div>
+        <h3>Hair Removal &amp; Waxing</h3>
+        <p>Smooth, professional waxing and hair-removal services performed with a gentle, precise, and comfortable touch.</p>
+        <div class="tag">Gentle &amp; precise</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8z"/><path d="M6 12c3 0 5 1 6 4M18 12c-3 0-5 1-6 4"/><path d="M12 16v5"/></svg></div>
+        <h3>Day-Spa Retreats</h3>
+        <p>Curated packages that layer massage, facial, and pampering into one seamless, restorative half-day escape.</p>
+        <div class="tag">Half-day &amp; full-day packages</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M12 7V4M8 4h8"/><path d="M3 12h18"/></svg></div>
+        <h3>Gift Cards</h3>
+        <p>The gift of true rest. Give someone you love an afternoon of calm — available for any service or amount.</p>
+        <div class="tag">The gift of calm</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section expr" id="experience">
+  <div class="wrap">
+    <div class="split reveal">
+      <figure class="split-img">
+        <div class="stone"><i></i><i></i><i></i></div>
+        <figcaption>Quiet rooms. Warm hands. A calm that stays with you.</figcaption>
+      </figure>
+      <div class="split-txt">
+        <span class="eyebrow">The Woodhouse Difference</span>
+        <h2 style="margin-top:1.2rem">Why guests <em>return</em>, visit after visit.</h2>
+        <ul>
+          <li>Consistently excellent care — reviewers describe every visit as intentional and professional.</li>
+          <li>A peaceful, soothing atmosphere designed to quiet the mind from the moment you arrive.</li>
+          <li>Skilled, licensed therapists who tailor each treatment to exactly what your body needs.</li>
+          <li>A classy, refined environment where the details are handled so you can simply exhale.</li>
+          <li>Effortless booking online or by phone — reserve your escape in moments.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RETREATS -->
+<section class="section retreat" id="retreats">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Signature Retreats</span>
+      <h2>Unhurried rituals, <em>thoughtfully composed</em>.</h2>
+      <p>Choose the escape that fits the moment — each retreat blends our most-loved treatments into one seamless, restorative experience.</p>
+    </div>
+    <div class="ret-grid">
+      <div class="ret reveal"><div class="num">01</div><h3>The Signature Escape</h3><p>A therapeutic massage paired with a customized facial — our most-loved introduction to true rest.</p></div>
+      <div class="ret reveal"><div class="num">02</div><h3>Renewal Retreat</h3><p>Hot-stone massage, glow-restoring facial, and a spa pedicure — a full afternoon of head-to-toe calm.</p></div>
+      <div class="ret reveal"><div class="num">03</div><h3>The Mother-to-Be</h3><p>Gentle maternity massage and a nourishing facial, thoughtfully tailored to comfort and care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS (audit fix — 405 reviews shown prominently) -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reveal" style="display:inline-block">
+      <span class="eyebrow" style="justify-content:center">Rated 4.8 ★ · 405 Reviews</span>
+      <h2 style="margin:1.2rem 0 .4rem">Loved by <em>405 guests</em> — and counting.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Consistently delivers excellence — a peaceful atmosphere and professional, intentional care every single visit."</p><cite>— Repeat Guest</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"The deep-tissue massage was exactly what my body needed. I left feeling completely renewed."</p><cite>— Google Review</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"A classy establishment with a relaxing, soothing atmosphere. Truly an escape from the everyday."</p><cite>— Google Review</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <div class="band-inner">
+      <span class="eyebrow" style="justify-content:center;color:var(--gold-bright)">Reserve Your Time</span>
+      <h2 style="margin-top:1.2rem">Your <em>escape</em> is waiting.</h2>
+      <p>Tell us the day and the treatment — we'll take care of the rest. Book online in moments or speak with us directly.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="https://woodhousespas.com/highland-village" class="btn btn-gold">Book Online</a>
+        <a href="tel:8174381772" class="btn btn-ivory">(817) 438-1772</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Visit Us</span>
+      <h2 style="margin:1.2rem 0 1rem">Calm, just off<br>Waller Creek.</h2>
+      <p style="color:var(--muted)">Our doors are open seven days a week in Highland Village. Book online or call ahead, and let the everyday fall away the moment you step inside.</p>
+    </div>
+    <div class="info reveal">
+      <b>Book By Phone</b>
+      <a class="big" href="tel:8174381772">(817) 438-1772</a>
+      <b>Location</b>
+      <span>4081 Waller Creek R120<br>Highland Village, TX 75077</span>
+      <b>Book Online</b>
+      <a href="https://woodhousespas.com/highland-village">woodhousespas.com</a>
+      <b>Hours</b>
+      <span>Open 7 Days · By Appointment</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <small>© 2026 Woodhouse Spa · Highland Village, TX · An escape for the senses · (817) 438-1772</small>
+    <span class="ts">Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a></span>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*80)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

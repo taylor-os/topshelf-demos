@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anderson Lighting &amp; Electric — Licensed Electrician &amp; Landscape Lighting Design | Flower Mound, TX</title>
+<meta name="description" content="Expert electrical, elevated by light. Licensed &amp; insured electrician in Flower Mound, TX — panel upgrades, EV chargers, lighting, remodels, and a specialty in stunning outdoor landscape lighting design. Rated 4.9★ across 219 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#131C31; --navy-2:#1B2640; --navy-3:#0E1526;
+  --amber:#EEB44E; --amber-bright:#F6CB77; --amber-deep:#D2953A;
+  --ivory:#F6F1E7; --ivory-2:#CDCBC2; --muted:#8A8B93; --muted-2:#6E7180;
+  --hair:rgba(238,180,78,.18); --hair-strong:rgba(238,180,78,.36);
+  --serif:"Fraunces",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+  --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--ivory-2);font-family:var(--sans);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.4rem,5vw,3rem)}
+.eyebrow{font-family:var(--sans);font-weight:600;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);display:inline-flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--amber);opacity:.75}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--ivory);line-height:1.08;letter-spacing:-.015em}
+h2{font-size:clamp(2rem,4.4vw,3.3rem)}
+em{font-style:italic;color:var(--amber-bright);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--sans);font-weight:700;font-size:.82rem;letter-spacing:.06em;padding:1.02rem 1.9rem;border-radius:11px;border:1.5px solid transparent;cursor:pointer;transition:all .3s var(--ease)}
+.btn-gold{background:var(--amber);color:#231704}
+.btn-gold:hover{background:var(--amber-bright);transform:translateY(-2px);box-shadow:0 16px 34px -14px rgba(238,180,78,.6)}
+.btn-line{background:transparent;color:var(--ivory);border-color:var(--hair-strong)}
+.btn-line:hover{border-color:var(--amber);color:var(--amber-bright)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.section{padding:clamp(4.5rem,9vw,7.5rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:56ch;margin-bottom:3.2rem}
+.head .eyebrow{margin-bottom:1.2rem}
+.head p{margin-top:1.1rem;color:var(--ivory-2);max-width:52ch}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s;border-bottom:1px solid transparent;padding:.4rem 0}
+header.scrolled{background:rgba(14,21,38,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand .m{width:40px;height:40px;border-radius:11px;background:radial-gradient(circle at 32% 28%,var(--amber-bright),var(--amber-deep));display:grid;place-items:center;color:#231704;box-shadow:0 0 22px -4px rgba(238,180,78,.65)}
+.brand .t{display:flex;flex-direction:column;line-height:1}
+.brand .t b{font-family:var(--serif);font-weight:600;font-size:1.24rem;color:var(--ivory);letter-spacing:.01em}
+.brand .t span{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--amber);margin-top:.26rem}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-weight:600;font-size:.86rem;letter-spacing:.02em;color:var(--ivory-2);transition:color .25s}
+.nav-links a:hover{color:var(--amber-bright)}
+.nav-cta{color:#231704!important;background:var(--amber);padding:.66rem 1.2rem;border-radius:10px;font-size:.8rem!important;font-weight:700;letter-spacing:.02em;transition:.3s}
+.nav-cta:hover{background:var(--amber-bright)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:26px;height:2px;background:var(--ivory);border-radius:2px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:var(--navy-3) center/cover no-repeat;transform:scale(1.04)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(94deg,rgba(15,21,38,.96) 0%,rgba(15,21,38,.82) 40%,rgba(15,21,38,.42) 78%,rgba(15,21,38,.28) 100%),linear-gradient(0deg,rgba(15,21,38,.9),transparent 55%)}
+.hero-inner{position:relative;z-index:2;padding-top:92px}
+.hero .badges{display:flex;gap:.55rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.chip{font-size:.72rem;font-weight:700;letter-spacing:.04em;background:rgba(238,180,78,.1);border:1px solid var(--hair-strong);color:var(--amber-bright);padding:.42rem .85rem;border-radius:100px}
+.hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);margin:0 0 1.4rem;max-width:15ch}
+.hero p.lead{font-size:clamp(1.05rem,1.5vw,1.24rem);max-width:47ch;color:var(--ivory-2);margin-bottom:2.3rem}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-phone{margin-left:.3rem;font-size:.9rem;color:var(--ivory)}
+.hero-phone b{color:var(--amber-bright);font-weight:700}
+.rating-badge{position:absolute;right:0;bottom:8vh;z-index:2;text-align:right;border-right:2px solid var(--amber);padding-right:1.2rem}
+.rating-badge .stars{color:var(--amber);letter-spacing:.16em;font-size:1rem}
+.rating-badge b{font-family:var(--serif);font-size:2.6rem;color:var(--ivory);display:block;line-height:1}
+.rating-badge small{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* TRUST STRIP */
+.trust{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:var(--navy-3)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding-top:2.3rem;padding-bottom:2.3rem}
+.trust div{text-align:center;padding:.4rem}
+.trust b{font-family:var(--serif);font-size:2.1rem;color:var(--amber-bright);display:block;line-height:1.1}
+.trust small{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* SERVICES */
+.grid{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:16px;overflow:hidden}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--navy);padding:2.3rem 1.9rem;transition:background .4s}
+.card:hover{background:var(--navy-2)}
+.card .ic{width:52px;height:52px;border-radius:13px;background:rgba(238,180,78,.1);color:var(--amber);display:grid;place-items:center;margin-bottom:1.2rem}
+.card h3{font-size:1.42rem;margin-bottom:.45rem}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* FEATURE — landscape lighting */
+.feature{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--navy-3),var(--navy-2));border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.feature::before{content:"";position:absolute;top:-30%;right:-10%;width:60%;height:160%;background:radial-gradient(ellipse at center,rgba(238,180,78,.16),transparent 65%);pointer-events:none}
+.feature .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.4rem,5vw,4rem);align-items:center}
+.feature .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#231704;background:var(--amber);padding:.4rem .9rem;border-radius:100px;margin-bottom:1.2rem}
+.feature h2{margin-bottom:1.1rem}
+.feature p{color:var(--ivory-2);max-width:48ch}
+.feature ul{list-style:none;margin-top:1.6rem}
+.feature li{padding:.8rem 0;border-top:1px solid var(--hair);display:flex;gap:.9rem;align-items:flex-start;font-size:.96rem;color:var(--ivory)}
+.feature li::before{content:"";width:8px;height:8px;background:var(--amber);margin-top:.5rem;flex:0 0 auto;transform:rotate(45deg);box-shadow:0 0 10px rgba(238,180,78,.7)}
+.glowcard{aspect-ratio:4/3;border-radius:18px;border:1px solid var(--hair-strong);background:
+  radial-gradient(circle at 22% 82%,rgba(238,180,78,.5),transparent 26%),
+  radial-gradient(circle at 50% 90%,rgba(238,180,78,.42),transparent 24%),
+  radial-gradient(circle at 78% 84%,rgba(238,180,78,.5),transparent 26%),
+  radial-gradient(circle at 35% 40%,rgba(246,203,119,.18),transparent 45%),
+  linear-gradient(180deg,#0B1120,#15203A 70%,#1D2A47);
+  position:relative;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.glowcard::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(0deg,rgba(238,180,78,.14),transparent);pointer-events:none}
+.glowcard .beam{position:absolute;bottom:0;width:2px;background:linear-gradient(0deg,rgba(238,180,78,.55),transparent);filter:blur(.5px)}
+.glowcard .b1{left:22%;height:46%}.glowcard .b2{left:50%;height:56%}.glowcard .b3{left:78%;height:46%}
+.glowcard .path{position:absolute;left:8%;right:8%;bottom:14%;height:1px;background:linear-gradient(90deg,transparent,rgba(238,180,78,.4),transparent)}
+
+/* EXPERIENCE split */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;border:1px solid var(--hair);border-radius:18px;overflow:hidden}
+.split-glow{min-height:440px;position:relative;background:
+  radial-gradient(circle at 30% 70%,rgba(238,180,78,.4),transparent 30%),
+  radial-gradient(circle at 70% 82%,rgba(238,180,78,.34),transparent 28%),
+  linear-gradient(150deg,#0B1120,#182543)}
+.split-glow::after{content:"⚡";position:absolute;inset:0;display:grid;place-items:center;font-size:4rem;color:rgba(238,180,78,.32)}
+.split-txt{padding:clamp(2.4rem,5vw,3.8rem);background:var(--navy-2);display:flex;flex-direction:column;justify-content:center}
+.split-txt ul{list-style:none;margin-top:1.6rem}
+.split-txt li{padding:.82rem 0;border-top:1px solid var(--hair);display:flex;gap:.9rem;align-items:flex-start;font-size:.96rem;color:var(--ivory)}
+.split-txt li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:rgba(238,180,78,.14);color:var(--amber);border-radius:50%;font-size:.78rem;font-weight:800;flex:0 0 auto;margin-top:.05rem}
+.split-txt li b{color:var(--ivory)}
+
+/* REVIEWS */
+.reviews{text-align:center}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;text-align:left}
+.quote{border:1px solid var(--hair);border-radius:16px;padding:2.1rem;background:var(--navy-2);transition:.4s}
+.quote:hover{border-color:var(--hair-strong);transform:translateY(-4px)}
+.quote .stars{color:var(--amber);letter-spacing:.16em;margin-bottom:1rem}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.5;color:var(--ivory);margin-bottom:1.2rem}
+.quote cite{font-style:normal;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber)}
+
+/* CTA BAND */
+.band{background:linear-gradient(135deg,#1B140A,#0E1526);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);text-align:center}
+.band h2{margin-bottom:1.3rem}
+.band p{max-width:46ch;margin:0 auto 2.1rem;color:var(--ivory-2)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--hair);padding:3.2rem 0 2.4rem;background:var(--navy-3)}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem;margin-bottom:2.4rem}
+.foot .fbrand{display:flex;align-items:center;gap:.7rem;margin-bottom:.9rem}
+.foot .fbrand b{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--ivory)}
+.foot p{font-size:.92rem;color:var(--muted);max-width:34ch}
+.foot small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.6rem}
+.foot a{display:block;padding:.16rem 0;font-size:.94rem;color:var(--ivory-2);transition:.2s}
+.foot a:hover{color:var(--amber-bright)}
+.foot .big{color:var(--ivory);font-family:var(--serif);font-size:1.45rem}
+.foot-btm{border-top:1px solid var(--hair);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.77rem;color:var(--muted)}
+.foot-btm a{color:var(--amber)}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--navy-2);flex-direction:column;justify-content:center;gap:2rem;transform:translateX(100%);transition:transform .4s var(--ease);border-left:1px solid var(--hair)}
+  .nav-links.open{transform:none}
+  .burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.6rem}
+  .grid-3{grid-template-columns:1fr}
+  .feature .wrap{grid-template-columns:1fr}
+  .glowcard{order:-1}
+  .split{grid-template-columns:1fr}
+  .split-glow{min-height:300px}
+  .rev-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .rating-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <span class="m"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+      <span class="t"><b>Anderson Lighting</b><span>&amp; Electric</span></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#landscape">Landscape Lighting</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:9728224522" class="nav-cta">Book Online · (972) 822-4522</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <div class="badges">
+      <span class="chip">Licensed &amp; Insured</span>
+      <span class="chip">Master Electrician</span>
+      <span class="chip">Landscape Lighting Design</span>
+      <span class="chip">Book Online</span>
+    </div>
+    <h1>Expert electrical, <em>elevated</em> by light.</h1>
+    <p class="lead">A licensed Flower Mound electrician for everything behind your walls — and an artist's eye for the outdoor landscape lighting that makes your home glow after dark.</p>
+    <div class="hero-cta">
+      <a href="tel:9728224522" class="btn btn-gold">Book Online</a>
+      <a href="tel:9728224522" class="btn btn-ghost">Call Now</a>
+      <span class="hero-phone">or dial <b>(972) 822-4522</b></span>
+    </div>
+  </div>
+  <div class="rating-badge">
+    <div class="stars">★★★★★</div>
+    <b>4.9</b>
+    <small>219 Google Reviews</small>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.9★</b><small>219 Google Reviews</small></div>
+    <div class="reveal"><b>219</b><small>Homeowners Served</small></div>
+    <div class="reveal"><b>100%</b><small>Licensed &amp; Insured</small></div>
+    <div class="reveal"><b>$0</b><small>Surprise Fees</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Full-service electrical, <em>done right</em>.</h2>
+      <p>From a single ceiling fan to a whole-home remodel, our licensed electricians handle it with clean, code-correct work and a respect for your home.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div><h3>Panel Upgrades</h3><p>Modern panels and safe capacity for today's homes — reconfigured, relabeled and permitted the right way.</p></div>
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="10" height="12" rx="1.5"/><path d="M14 12h3a2 2 0 012 2v3a1.5 1.5 0 003 0v-6l-2-2"/><path d="M7 4v4M11 4v4"/></svg></div><h3>EV Charger Install</h3><p>Level-2 240V home charging installed cleanly and correctly — ready for your car the day it arrives.</p></div>
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19"/></svg></div><h3>Recessed &amp; Fixture Lighting</h3><p>Recessed cans, statement chandeliers and fixture swaps — laid out for even, flattering light in every room.</p></div>
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><path d="M12 10V4M12 4a4 4 0 00-4 4M12 4a4 4 0 014 4M8 12l-4 3M16 12l4 3M12 14l0 5"/></svg></div><h3>Ceiling Fans</h3><p>New installs, replacements and remote-ready upgrades — balanced, quiet, and wired to code.</p></div>
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="10" cy="9" r="1"/><circle cx="14" cy="9" r="1"/><circle cx="10" cy="14" r="1"/><circle cx="14" cy="14" r="1"/></svg></div><h3>Outlets &amp; Wiring</h3><p>New outlets, USB &amp; GFCI upgrades, troubleshooting and rewires — safe, tidy, and future-proof.</p></div>
+      <div class="card reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/><path d="M3 9h18"/></svg></div><h3>Remodels &amp; Additions</h3><p>Whole-home rewires, remodels and additions for homeowners and commercial spaces — planned, permitted, powered.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LANDSCAPE LIGHTING — signature offering -->
+<section class="feature section" id="landscape">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Our Signature Craft</span>
+      <span class="eyebrow" style="margin-bottom:1rem;display:flex">Outdoor Landscape Lighting</span>
+      <h2>The most beautiful hour of your home is <em>after sunset</em>.</h2>
+      <p>Warm, low-voltage LED lighting that turns architecture, trees and pathways into something worth pulling into the driveway for. We design it, install it, and dial in every fixture until the whole property glows.</p>
+      <ul>
+        <li>Custom lighting design mapped to your home's architecture and landscape.</li>
+        <li>Path, uplight, wash &amp; accent fixtures in warm, energy-smart LED.</li>
+        <li>Timers, transformers &amp; smart control — it turns itself on at dusk.</li>
+        <li>Curb appeal, safety and security that pays you back every night.</li>
+      </ul>
+    </div>
+    <div class="glowcard reveal" aria-hidden="true">
+      <span class="beam b1"></span><span class="beam b2"></span><span class="beam b3"></span>
+      <span class="path"></span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="split-glow"></div>
+      <div class="split-txt">
+        <span class="eyebrow">Why Homeowners Choose Anderson</span>
+        <h2 style="margin-top:1.2rem">A 4.9 rating, earned one home at a time.</h2>
+        <p style="color:var(--ivory-2)">219 homeowners have trusted us with their panels, their EV chargers and their after-dark curb appeal. Here's what keeps them calling us back.</p>
+        <ul>
+          <li>Licensed &amp; insured — <b>clean, code-correct work</b>, permitted when it should be.</li>
+          <li>Respectful of your home — we clean up like we were never there.</li>
+          <li>Honest, up-front pricing with <b>no surprise fees</b>, ever.</li>
+          <li>On-time, on-budget, and finished when we say it will be.</li>
+          <li>One team for it all — electrical, lighting design, and installation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reveal" style="display:inline-block">
+      <span class="eyebrow" style="justify-content:center">4.9 ★ · 219 Reviews</span>
+      <h2 style="margin:1.2rem 0 .4rem">Neighbors who <em>trust us</em>.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Did a GREAT job — came with good ideas and knocked it out on time. The result looks great."</p><cite>— Mark</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Knowledgeable and respectful of my home. Cleaned up perfectly — like nothing ever happened."</p><cite>— B. Ram</cite></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Reconfigured my panel and installed a 240V EV charger. Professional, quick and reasonable."</p><cite>— Nathalie</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Ready When You Are</span>
+    <h2 style="margin-top:1.2rem">Let's light up your home.</h2>
+    <p>Book online in minutes or call to talk it through — from a quick fix to a full landscape lighting design, we'd love to help.</p>
+    <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+      <a href="tel:9728224522" class="btn btn-gold">Book Online</a>
+      <a href="tel:9728224522" class="btn btn-line">(972) 822-4522</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="fbrand">
+          <span class="m" style="width:36px;height:36px;border-radius:10px;background:radial-gradient(circle at 32% 28%,var(--amber-bright),var(--amber-deep));display:grid;place-items:center;color:#231704"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+          <b>Anderson Lighting &amp; Electric</b>
+        </div>
+        <p>Licensed electrical &amp; custom landscape lighting for Flower Mound and the surrounding DFW communities. Expert electrical, elevated by light.</p>
+      </div>
+      <div>
+        <small>Contact</small>
+        <a href="tel:9728224522" class="big">(972) 822-4522</a>
+        <a href="#">Flower Mound, TX &amp; DFW</a>
+        <a href="#services">Book Online</a>
+      </div>
+      <div>
+        <small>Services</small>
+        <a href="#services">Panel Upgrades &amp; EV Chargers</a>
+        <a href="#services">Lighting, Fans &amp; Wiring</a>
+        <a href="#landscape">Landscape Lighting Design</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Anderson Lighting &amp; Electric · Licensed &amp; Insured · Flower Mound, TX</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a> · (972) 822-4522 · Flower Mound, TX</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*80)+'ms';io.observe(el)});
+</script>
+</body>
+</html>

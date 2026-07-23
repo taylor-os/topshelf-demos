@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Massage Life Center — Therapeutic Massage &amp; Membership Wellness | Highland Village, TX</title>
+<meta name="description" content="Customized therapeutic massage & affordable monthly membership wellness in Highland Village, TX. Swedish, deep tissue, prenatal, couples & sports recovery in a serene, private setting. Rated 4.7★ across 311 Google reviews. Book online today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#EDE6DA; --ivory:#FBF8F2; --paper:#fff; --ink:#33362F; --ink-2:#5E6157; --muted:#93968B;
+  --sage:#8A9A86; --sage-deep:#6F7F6C; --sage-soft:#E7ECE4;
+  --terra:#C08763; --terra-deep:#A96F4C; --stone:#F0EAE0;
+  --hair:#E2DACC;
+  --disp:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --maxw:1160px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink-2);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{font-family:var(--disp);font-weight:500;color:var(--ink);line-height:1.05;letter-spacing:0}
+h2{font-size:clamp(2.2rem,4.6vw,3.5rem)}
+.disp{font-family:var(--disp)}
+em{font-style:italic;color:var(--sage-deep)}
+.eyebrow{font-weight:500;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--terra-deep);display:inline-flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--terra);display:inline-block}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:400;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:.95rem 1.9rem;border-radius:100px;cursor:pointer;transition:all .3s var(--ease);border:1px solid transparent}
+.btn-sage{background:var(--sage);color:#fff}
+.btn-sage:hover{background:var(--sage-deep);transform:translateY(-2px)}
+.btn-terra{background:var(--terra);color:#fff}
+.btn-terra:hover{background:var(--terra-deep);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--sage);color:var(--sage-deep)}
+.section{padding:clamp(4.5rem,8vw,7.5rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:52ch;margin-bottom:3.2rem}
+.head .eyebrow{margin-bottom:1.1rem}
+.head p{margin-top:1.1rem;color:var(--ink-2)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.35s;padding:.5rem 0}
+header.scrolled{background:rgba(251,248,242,.9);backdrop-filter:blur(12px);box-shadow:0 6px 30px rgba(51,54,47,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--disp);font-weight:600;font-size:1.45rem;color:var(--ink);letter-spacing:.01em}
+.brand .dot{width:36px;height:36px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-size:1.05rem}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-weight:400;font-size:.9rem;letter-spacing:.03em;color:var(--ink-2);transition:.25s}
+.nav-links a:hover{color:var(--sage-deep)}
+.nav-cta{background:var(--sage);color:#fff!important;padding:.6rem 1.3rem;border-radius:100px;font-weight:400;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.nav-cta:hover{background:var(--sage-deep)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:1.5px;background:var(--ink);border-radius:2px}
+
+.hero{position:relative;padding:calc(76px + clamp(3rem,7vw,6rem)) 0 clamp(3rem,7vw,6rem)}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero h1{font-size:clamp(3rem,6vw,5rem);margin:1.2rem 0 1.4rem}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.22rem);max-width:44ch;margin-bottom:2.2rem;color:var(--ink-2)}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-phone{font-size:.92rem;color:var(--ink)}.hero-phone b{color:var(--sage-deep);font-weight:500}
+.hero-img{position:relative;border-radius:200px 200px 26px 26px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(111,127,108,.55);aspect-ratio:4/5}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-18px;bottom:30px;background:#fff;border-radius:18px;padding:1rem 1.35rem;box-shadow:0 18px 40px -18px rgba(111,127,108,.5);display:flex;align-items:center;gap:.85rem}
+.hero-badge .n{font-family:var(--disp);font-size:2.2rem;color:var(--sage-deep);line-height:1;font-weight:600}
+.hero-badge .stars{color:var(--terra);font-size:.85rem;letter-spacing:.1em}
+.hero-badge small{font-size:.72rem;color:var(--muted);display:block}
+
+.trust{background:var(--sage)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.6rem 0}
+.trust div{text-align:center}
+.trust b{font-family:var(--disp);font-weight:500;font-size:2.3rem;color:#fff;display:block;line-height:1}
+.trust small{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#DCE4D8}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.svc{background:var(--paper);border:1px solid var(--hair);border-radius:22px;padding:2.4rem 2rem;transition:.35s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(111,127,108,.4);border-color:transparent}
+.svc .ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;margin-bottom:1.4rem;color:var(--sage-deep)}
+.svc h3{font-size:1.65rem;margin-bottom:.5rem}
+.svc p{font-size:.94rem;color:var(--ink-2)}
+.svc .tag{margin-top:1.3rem;font-size:.74rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--terra-deep)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.6rem);align-items:center}
+.split ul{list-style:none;margin-top:1.6rem}
+.split li{padding:.85rem 0;border-top:1px solid var(--hair);display:flex;gap:.85rem;align-items:flex-start;color:var(--ink);font-size:.98rem}
+.split li b{color:var(--sage-deep);font-weight:500}
+.split li::before{content:"✓";color:var(--sage-deep);font-weight:600;flex:0 0 auto}
+.split-art{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:linear-gradient(160deg,var(--sage-soft),var(--stone));display:grid;place-items:center;box-shadow:0 26px 60px -30px rgba(111,127,108,.4)}
+.split-art .halo{position:absolute;width:64%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 35%,rgba(255,255,255,.9),rgba(138,154,134,.18) 70%);box-shadow:0 20px 60px -20px rgba(111,127,108,.5)}
+.split-art .ring{position:absolute;width:82%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(138,154,134,.35)}
+.split-art .mark{position:relative;font-family:var(--disp);font-style:italic;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--sage-deep);text-align:center;line-height:1.2}
+.split-art .mark span{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terra-deep);margin-top:.7rem;font-weight:500}
+
+/* membership */
+.member{background:var(--stone)}
+.mem-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,4vw,3.6rem);align-items:center}
+.mem-card{background:var(--paper);border:1px solid var(--hair);border-radius:26px;padding:clamp(2rem,3.5vw,2.8rem);box-shadow:0 24px 60px -34px rgba(111,127,108,.45)}
+.mem-card .price{display:flex;align-items:baseline;gap:.3rem;margin:.4rem 0 1.4rem}
+.mem-card .price b{font-family:var(--disp);font-size:3.6rem;font-weight:600;color:var(--sage-deep);line-height:1}
+.mem-card .price span{font-size:.9rem;color:var(--muted)}
+.mem-card ul{list-style:none}
+.mem-card li{padding:.7rem 0;border-top:1px solid var(--hair);display:flex;gap:.7rem;align-items:flex-start;font-size:.95rem;color:var(--ink)}
+.mem-card li::before{content:"✓";color:var(--terra);font-weight:600;flex:0 0 auto}
+.mem-card .note{font-size:.78rem;color:var(--muted);margin-top:1.3rem}
+.mem-card .btn{margin-top:1.5rem;width:100%;justify-content:center}
+.mem-tag{display:inline-block;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--terra);padding:.35rem .9rem;border-radius:100px}
+
+.reviews{background:var(--sage-deep);color:#E8EDE6;text-align:center}
+.reviews h2{color:#fff}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.8rem;text-align:left}
+.rev{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:2rem}
+.rev .stars{color:#E6B98E;letter-spacing:.1em;margin-bottom:.9rem}
+.rev p{font-family:var(--disp);font-size:1.25rem;font-style:italic;line-height:1.45;color:#fff;margin-bottom:1rem}
+.rev cite{font-style:normal;font-size:.78rem;letter-spacing:.06em;color:#B7C6B2;font-weight:400}
+
+.band{text-align:center}
+.band-inner{background:linear-gradient(150deg,var(--sage),var(--sage-deep));border-radius:30px;padding:clamp(2.8rem,5vw,4.8rem)}
+.band h2{color:#fff}
+.band p{color:#E1E9DE;max-width:44ch;margin:1.1rem auto 2.2rem}
+
+footer{background:var(--ink);color:#B4B8AC;padding:3.2rem 0 2.2rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot h4{font-family:var(--disp);color:#fff;font-size:1.45rem;margin-bottom:.7rem}
+.foot a{display:block;padding:.2rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--terra)}
+.foot .big{font-family:var(--disp);color:#fff;font-size:1.5rem}
+.foot small{display:block;font-size:.74rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:.5rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--terra)}
+
+@media(max-width:900px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--paper);flex-direction:column;justify-content:center;gap:1.8rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.1)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .hero-grid{grid-template-columns:1fr}.hero-img{order:-1;aspect-ratio:5/4;border-radius:26px}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.8rem}
+  .svc-grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-art{order:-1;aspect-ratio:5/4}
+  .mem-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="dot">❋</span> Massage Life Center</a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#membership">Membership</a>
+      <a href="#experience">Experience</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:9723174400" class="nav-cta">Book Online</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Highland Village, TX</span>
+      <h1>Your monthly <em>reset</em>.</h1>
+      <p class="lead">Customized therapeutic massage in a calm, private setting — with affordable monthly membership plans that make real relaxation a habit, not a splurge.</p>
+      <div class="hero-cta">
+        <a href="tel:9723174400" class="btn btn-sage">Book a Massage</a>
+        <a href="#membership" class="btn btn-line">View Membership</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero.jpg" alt="Serene sage-toned massage room at Massage Life Center">
+      <div class="hero-badge">
+        <div class="n">4.7</div>
+        <div><div class="stars">★★★★★</div><small>311 Google reviews</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>4.7★</b><small>Google Rating</small></div>
+    <div class="reveal"><b>311</b><small>Happy Reviews</small></div>
+    <div class="reveal"><b>7+</b><small>Massage Modalities</small></div>
+    <div class="reveal"><b>Monthly</b><small>Membership Plans</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Massage that meets you <em>where you are</em>.</h2>
+      <p>Every session is customized to your body and your day — from deep, restorative pressure to gentle, quiet relief. Warm hot-towel service and a private waiting area included.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 14c2-3 5-4 8-4s6 1 8 4"/><path d="M6 18c1.5-2 3.5-3 6-3s4.5 1 6 3"/><circle cx="12" cy="6" r="2"/></svg></div><h3>Customized Therapeutic</h3><p>A session built around you — your therapist blends techniques to target tension, tightness and the stress you carry day to day.</p><div class="tag">Most requested</div></div>
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 17c3-4 6-4 9 0s6 4 9 0"/></svg></div><h3>Swedish &amp; Deep Tissue</h3><p>Flowing, calming Swedish for full-body relaxation, or focused deep-tissue pressure to release chronic knots and stubborn tension.</p><div class="tag">Relax or release</div></div>
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c-4-2-7-5-7-9a5 5 0 0110 0 5 5 0 0110 0c0 4-3 7-7 9"/></svg></div><h3>Prenatal &amp; Maternity</h3><p>Gentle, supportive massage designed for every stage of pregnancy — easing aches and helping expecting mothers truly rest.</p><div class="tag">Safe &amp; nurturing</div></div>
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="2.4"/><circle cx="16" cy="8" r="2.4"/><path d="M4 20c0-3 2-5 4-5s4 2 4 5M12 20c0-3 2-5 4-5s4 2 4 5"/></svg></div><h3>Couples Massage</h3><p>Unwind side by side in a shared room — a calm, restorative escape to enjoy together, whether it's a date or a well-earned break.</p><div class="tag">Side by side</div></div>
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 12h12M6 12l-2-3M6 12l-2 3M18 12l2-3M18 12l2 3"/><circle cx="12" cy="12" r="2.2"/></svg></div><h3>Sports &amp; Recovery</h3><p>Targeted work for active bodies — improve mobility, speed recovery and keep training days from turning into rest days.</p><div class="tag">Move better</div></div>
+      <div class="svc reveal"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 15c2 3 12 3 14 0"/><path d="M7 15V9a5 5 0 0110 0v6"/><path d="M9 6l1-2M14 6l1-2"/></svg></div><h3>Hot-Towel Service</h3><p>A heated neck towel, a beverage and a private waiting area — the small, thoughtful touches that make every visit feel like an escape.</p><div class="tag">Included with every visit</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / WHY -->
+<section class="section" id="experience">
+  <div class="wrap split">
+    <div class="split-art reveal">
+      <div class="ring"></div>
+      <div class="halo"></div>
+      <div class="mark">Breathe out.<br>You've arrived.<span>Highland Village · TX</span></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">The Experience</span>
+      <h2 style="margin:1rem 0">Calm, clean and genuinely <em>restorative</em>.</h2>
+      <p>Our guests don't just leave relaxed — they come back. Here's what keeps Highland Village returning month after month:</p>
+      <ul>
+        <li>A <b>private waiting area</b> with a heated neck towel and a beverage before every session.</li>
+        <li>A <b>warm, welcoming front desk</b> — reviewers consistently mention how well cared-for they feel.</li>
+        <li><b>Skilled, matched therapists</b> — many guests request the same therapist visit after visit.</li>
+        <li><b>Reasonable pricing</b> and easy online booking, so self-care actually fits your life.</li>
+      </ul>
+      <a href="tel:9723174400" class="btn btn-sage" style="margin-top:1.8rem">Book Your Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="section member" id="membership">
+  <div class="wrap">
+    <div class="mem-grid">
+      <div class="reveal">
+        <span class="eyebrow">Monthly Membership</span>
+        <h2 style="margin:1rem 0 .6rem">The easiest way to feel your <em>best</em>.</h2>
+        <p>Massage shouldn't be a once-a-year treat. Our affordable monthly membership turns your reset into a routine — one relaxing session a month, member pricing, and rollover so a busy month never goes to waste. Most guests join after their very first visit.</p>
+        <ul style="list-style:none;margin-top:1.6rem">
+          <li style="padding:.6rem 0;color:var(--ink)">✦&nbsp;&nbsp;A predictable monthly rhythm for your wellbeing</li>
+          <li style="padding:.6rem 0;color:var(--ink)">✦&nbsp;&nbsp;Member rates on every service &amp; add-on</li>
+          <li style="padding:.6rem 0;color:var(--ink)">✦&nbsp;&nbsp;Share the love — gift sessions to family &amp; friends</li>
+        </ul>
+      </div>
+      <div class="mem-card reveal">
+        <span class="mem-tag">Member Favorite</span>
+        <div class="price"><b>1</b><span>&nbsp;massage / month</span></div>
+        <p style="color:var(--ink-2);font-size:.95rem;margin-bottom:.4rem">A monthly customized massage at a reduced member rate — plus perks that make it easy to keep coming back.</p>
+        <ul>
+          <li>Reduced, members-only session pricing</li>
+          <li>Unused sessions roll over — never lose a month</li>
+          <li>Member discounts on additional massages</li>
+          <li>Priority online booking &amp; flexible scheduling</li>
+          <li>Cancel or pause anytime — no long contracts</li>
+        </ul>
+        <p class="note">Pricing varies by plan — call or book online for current member rates.</p>
+        <a href="tel:9723174400" class="btn btn-terra">Become a Member</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E6B98E;justify-content:center">4.7 ★ · 311 Reviews</span>
+    <h2 style="margin-top:1rem">Loved across Highland Village.</h2>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Very clean, a private waiting area with a heated neck towel and drinks — reasonably priced, and an excellent massage."</p><cite>— Maci</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"Warm front desk, a heated neck pillow and a beverage while you wait, then amazing stress relief. I always leave lighter."</p><cite>— Vladlena</cite></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"I joined the membership after my very first massage. My therapist is amazing — I look forward to it every month."</p><cite>— Fmrose</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section band">
+  <div class="wrap reveal">
+    <div class="band-inner">
+      <h2>Ready for your reset?</h2>
+      <p>Book your customized massage online in minutes — or call and we'll help you find the perfect time and therapist.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:9723174400" class="btn btn-terra">Book a Massage</a>
+        <a href="tel:9723174400" class="btn btn-line" style="background:#fff;border-color:#fff">(972) 317-4400</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>❋ Massage Life Center</h4>
+        <p style="font-size:.92rem">Customized therapeutic massage &amp; affordable monthly membership wellness in Highland Village, TX. Your monthly reset — clean, private and genuinely restorative.</p>
+      </div>
+      <div>
+        <small>Visit</small>
+        <a href="#">2570 Justin Rd #115,<br>Highland Village, TX 75077</a>
+        <a href="#">Book online anytime</a>
+      </div>
+      <div>
+        <small>Reserve</small>
+        <a href="tel:9723174400" class="big">(972) 317-4400</a>
+        <a href="tel:9723174400">Book Online</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Massage Life Center · Highland Village, TX. All rights reserved.</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a> · (972) 317-4400 · Highland Village, TX</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>30));
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

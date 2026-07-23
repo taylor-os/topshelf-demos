@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Depot — Modern, Gentle Family Dentistry in Highland Village, TX | Dr. Himesh Kana, DMD</title>
+<meta name="description" content="Modern, gentle dentistry for the whole family in Highland Village, TX. General & family dentistry, cosmetic, dental implants, kids dentistry & emergency care. Now accepting new patients — book online today. Most insurance welcome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0C3A5E; --navy-2:#124B76; --blue:#1E6FB0; --blue-2:#3B8AC9; --blue-soft:#E8F2FA;
+  --mint:#54C3B0; --mint-deep:#3AA593; --mint-soft:#E4F6F2;
+  --bg:#F4F9FD; --paper:#fff; --ink:#132C40; --ink-2:#4E6577; --muted:#8497A6; --hair:#E2ECF4;
+  --sans:"Poppins",system-ui,sans-serif; --maxw:1180px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink-2);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.3rem,5vw,2.6rem)}
+h1,h2,h3{color:var(--ink);font-weight:800;line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem)}
+.eyebrow{font-weight:700;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--mint);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.9rem;padding:1rem 1.7rem;border-radius:12px;cursor:pointer;transition:all .28s var(--ease);border:2px solid transparent}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--navy-2);transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(30,111,176,.6)}
+.btn-mint{background:var(--mint);color:#093730}
+.btn-mint:hover{background:var(--mint-deep);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(58,165,147,.6)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--hair)}
+.btn-line:hover{border-color:var(--blue);color:var(--blue)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.section{padding:clamp(4rem,8vw,7rem) 0;position:relative}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.head{max-width:54ch;margin-bottom:3rem}.head .eyebrow{margin-bottom:1rem}.head p{margin-top:1rem}
+
+/* top bar */
+.topbar{background:var(--navy);color:#C3D9E9;font-size:.82rem;font-weight:500}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar a{color:#fff;font-weight:700}
+.topbar .hrs{color:#93B2C9}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.4rem;color:var(--navy);letter-spacing:-.02em}
+.brand .m{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--navy));display:grid;place-items:center;color:#fff}
+.nav-links{display:flex;gap:1.9rem;align-items:center}
+.nav-links a{font-weight:500;font-size:.92rem;color:var(--ink-2);transition:.2s}.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--mint);color:#093730!important;padding:.62rem 1.2rem;border-radius:10px;font-weight:700;font-size:.86rem}
+.nav-cta:hover{background:var(--mint-deep);color:#fff!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:26px;height:2.5px;background:var(--navy);border-radius:2px}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#0C3A5E center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,42,68,.95) 0%,rgba(9,42,68,.82) 46%,rgba(9,42,68,.42) 100%)}
+.hero-inner{position:relative;z-index:2;padding:clamp(3.5rem,7vw,6.5rem) 0}
+.hero .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.chip{font-size:.72rem;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);color:#DDECF6;padding:.4rem .8rem;border-radius:100px}
+.hero h1{color:#fff;font-size:clamp(2.5rem,5.6vw,4.3rem);max-width:16ch;margin-bottom:1.2rem}
+.hero h1 span{color:var(--mint)}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.22rem);max-width:48ch;color:#C6DAEB;margin-bottom:2rem}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+.hero-welcome{display:inline-flex;align-items:center;gap:.7rem;margin-top:2rem;background:rgba(84,195,176,.14);border:1px solid rgba(84,195,176,.4);padding:.7rem 1.1rem;border-radius:100px;color:#DFF6F1;font-size:.9rem;font-weight:600}
+.hero-welcome b{color:#fff}
+
+/* trust */
+.trust{background:var(--paper);border-bottom:1px solid var(--hair)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2.2rem 0}
+.trust div{text-align:center}
+.trust b{font-size:1.7rem;font-weight:800;color:var(--navy);display:block;line-height:1.1}
+.trust small{font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:2.1rem 1.8rem;transition:.3s}
+.svc:hover{transform:translateY(-5px);box-shadow:0 22px 44px -24px rgba(12,58,94,.4);border-color:var(--blue-2)}
+.svc .ic{width:52px;height:52px;border-radius:13px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc h3{font-size:1.28rem;margin-bottom:.4rem;font-weight:700}
+.svc p{font-size:.92rem;color:var(--ink-2)}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.4rem);align-items:center}
+.split-visual{border-radius:18px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 24px 50px -28px rgba(12,58,94,.4);background:linear-gradient(150deg,var(--blue-soft),var(--mint-soft));position:relative;display:grid;place-items:center}
+.split-visual .tooth{font-size:clamp(5rem,13vw,9rem);filter:drop-shadow(0 14px 26px rgba(12,58,94,.18))}
+.split-visual .sparkle{position:absolute;color:var(--mint);font-size:1.6rem}
+.split-visual .s1{top:16%;left:18%}.split-visual .s2{bottom:20%;right:20%;color:var(--blue)}.split-visual .s3{top:24%;right:22%;font-size:1.1rem}
+.split ul{list-style:none;margin-top:1.4rem}
+.split li{padding:.75rem 0;border-top:1px solid var(--hair);display:flex;gap:.8rem;align-items:flex-start;color:var(--ink);font-weight:500}
+.split li::before{content:"✓";display:grid;place-items:center;width:22px;height:22px;background:var(--mint-soft);color:var(--mint-deep);border-radius:50%;font-size:.8rem;font-weight:800;flex:0 0 auto;margin-top:.1rem}
+
+/* welcome band */
+.welcome{background:var(--navy);color:#C6DAEB;border-radius:22px;padding:clamp(2.4rem,5vw,3.6rem);text-align:center}
+.welcome h2{color:#fff}
+.welcome .pri{color:var(--mint);font-weight:800}
+.welcome .items{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.6rem}
+.welcome .items span{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);padding:.45rem 1rem;border-radius:100px;font-size:.86rem;font-weight:600;color:#DDECF6}
+.welcome .items span.hot{background:var(--mint);color:#093730;border-color:var(--mint)}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.rev{background:var(--paper);border:1px solid var(--hair);border-radius:16px;padding:1.9rem}
+.rev .mark{font-size:2.4rem;line-height:.6;color:var(--mint);font-weight:800;font-family:Georgia,serif}
+.rev p{color:var(--ink);font-weight:500;font-size:1.02rem;line-height:1.55;margin:.6rem 0 .9rem}
+.rev cite{font-style:normal;font-size:.82rem;font-weight:700;color:var(--blue)}
+
+/* band */
+.band{background:linear-gradient(120deg,var(--navy),var(--blue));color:#fff;text-align:center;border-radius:26px;padding:clamp(2.8rem,5vw,4.5rem)}
+.band h2{color:#fff}.band p{color:#D2E5F2;max-width:46ch;margin:1rem auto 2rem}
+
+footer{background:var(--navy);color:#93B2C9;padding:3rem 0 2rem;margin-top:clamp(3rem,6vw,5rem)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.foot .brand{color:#fff;margin-bottom:.6rem;font-size:1.4rem;font-weight:800}
+.foot a{display:block;padding:.18rem 0;font-size:.92rem;transition:.2s}.foot a:hover{color:var(--mint)}
+.foot .big{color:#fff;font-size:1.4rem;font-weight:800}
+.foot small{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin-bottom:.4rem}
+.foot p{font-size:.92rem}
+.foot-btm{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--muted)}
+.foot-btm a{color:var(--mint)}
+
+@media(max-width:900px){
+  .topbar .hrs{display:none}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,300px);background:var(--paper);flex-direction:column;justify-content:center;gap:1.7rem;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-10px 0 40px rgba(0,0,0,.12)}
+  .nav-links.open{transform:none}.burger{display:flex}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .svc-grid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-visual{order:-1}
+  .rev-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>🦷 Modern, gentle dentistry for the whole family in Highland Village, TX</span>
+    <span class="hrs">Now accepting new patients · <a href="tel:9729661234">(972) 966-1234</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="m"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-2 0-3 .8-4.5.8S4.5 2 3.2 3.2C1.8 4.6 1.8 7 2.4 9.6c.4 1.8.5 2.8.8 4.4.4 2 .6 3.4 1.1 5 .3 1 .7 2 1.5 2 1 0 1.2-1.3 1.5-3 .3-1.6.6-2.6 1.2-2.6h1c.6 0 .9 1 1.2 2.6.3 1.7.5 3 1.5 3 .8 0 1.2-1 1.5-2 .5-1.6.7-3 1.1-5 .3-1.6.4-2.6.8-4.4C22.2 7 22.2 4.6 20.8 3.2 19.5 2 18.3 2.8 16.5 2.8S14 2 12 2z"/></svg></span> Dental Depot</a>
+    <nav class="nav-links" id="menu">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#new-patients">New Patients</a>
+      <a href="#reviews">Reviews</a>
+      <a href="tel:9729661234" class="nav-cta">Book Today</a>
+    </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <div class="badges">
+      <span class="chip">Dr. Himesh Kana, DMD</span>
+      <span class="chip">Gentle &amp; Comfortable</span>
+      <span class="chip">Whole-Family Care</span>
+      <span class="chip">Most Insurance Welcome</span>
+    </div>
+    <h1>A dentist your whole family will <span>actually love.</span></h1>
+    <p class="lead">Modern, gentle dentistry in Highland Village — from routine cleanings to cosmetic makeovers and implants — delivered by a friendly team that puts your comfort first.</p>
+    <div class="hero-cta">
+      <a href="tel:9729661234" class="btn btn-mint">Book Your Visit</a>
+      <a href="tel:9729661234" class="btn btn-ghost">Call (972) 966-1234</a>
+    </div>
+    <div class="hero-welcome">✨ <span><b>New patients welcome</b> — easy online scheduling &amp; most insurance accepted</span></div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <div class="reveal"><b>Gentle</b><small>Comfort-First Care</small></div>
+    <div class="reveal"><b>All Ages</b><small>Kids to Grandparents</small></div>
+    <div class="reveal"><b>Same-Day</b><small>Emergency Visits</small></div>
+    <div class="reveal"><b>Welcome</b><small>Now Taking New Patients</small></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Complete care for every smile in your family.</h2>
+      <p>From your child's first checkup to a full smile makeover, everything you need is right here in Highland Village — under one gentle, modern roof.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c-1.8 0-2.7.7-4 .7S6 3 4.8 4.2C3.5 5.4 3.5 7.6 4 10c.4 1.6.5 2.5.8 4 .4 1.8.5 3 1.4 3 .9 0 1.1-1.2 1.4-2.8.3-1.4.5-2.2 1.1-2.2h1.6c.6 0 .8.8 1.1 2.2.3 1.6.5 2.8 1.4 2.8.9 0 1-1.2 1.4-3 .3-1.5.4-2.4.8-4 .5-2.4.5-4.6-.8-5.8C17.7 3.7 16.8 3 15 3s-1.2.7-3 .7"/></svg></div><h3>General &amp; Family Dentistry</h3><p>Comprehensive checkups, fillings and preventive care for every member of the family — all in one welcoming place.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2 5 5 .5-3.8 3.4L16.5 16 12 13.2 7.5 16l1.3-5.1L5 7.5 10 7z"/></svg></div><h3>Cosmetic Dentistry</h3><p>Whitening, veneers and smile makeovers designed to give you a brighter, more confident smile you'll love to show off.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2c3 0 5 2 5 5 0 4-2 6-2 10a3 3 0 01-6 0c0-4-2-6-2-10 0-3 2-5 5-5z"/><path d="M12 7v13"/></svg></div><h3>Dental Implants</h3><p>Natural-looking, permanent tooth replacement that restores your bite, your smile and your confidence for good.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M4 20c0-3 2-5 5-5s5 2 5 5"/><circle cx="17" cy="10" r="2"/><path d="M15 20c0-2 1-3.5 3-3.5"/></svg></div><h3>Kids &amp; Pediatric Dentistry</h3><p>Gentle, patient care that helps children feel safe and builds healthy habits — making the dentist something they look forward to.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></div><h3>Emergency Dental Care</h3><p>Tooth pain or a broken tooth? We make room for urgent visits and get you comfortable and out of pain — fast.</p></div>
+      <div class="svc reveal"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20c-4.5 0-8-3.5-8-8a5 5 0 019.5-2A5 5 0 0120 12c0 4.5-3.5 8-8 8z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Cleanings, Exams &amp; Restorations</h3><p>Routine cleanings, thorough exams, and expert restorations — the everyday care that keeps your smile healthy for life.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap split">
+    <div class="split-visual reveal">
+      <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✦</span>
+      <span class="tooth">🦷</span>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why Families Choose Us</span>
+      <h2 style="margin:1rem 0">Dentistry that's modern, gentle &amp; genuinely kind.</h2>
+      <p>Dr. Himesh Kana and the Dental Depot team believe great dental care should feel calm and easy — from the moment you walk in to the moment you leave smiling.</p>
+      <ul>
+        <li>A <b style="color:var(--ink)">gentle, comfort-first approach</b> — ideal for nervous or anxious patients.</li>
+        <li>One trusted practice for the <b style="color:var(--ink)">whole family</b>, from toddlers to grandparents.</li>
+        <li>Modern technology and up-to-date techniques for better, more comfortable care.</li>
+        <li>A friendly front-office and assistant team that treats you like a neighbor.</li>
+        <li>Easy online scheduling and most insurance welcome — no hassle.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- NEW PATIENTS -->
+<section class="section" id="new-patients">
+  <div class="wrap">
+    <div class="welcome reveal">
+      <span class="eyebrow" style="color:var(--mint);justify-content:center">Now Accepting New Patients</span>
+      <h2 style="margin:1rem 0">Your new dental home in <span class="pri">Highland Village</span>.</h2>
+      <p style="max-width:54ch;margin:0 auto">Making the switch is simple. Book online or give us a call — we'll handle the rest and make your first visit relaxed, thorough and completely comfortable.</p>
+      <div class="items">
+        <span class="hot">New Patients Welcome</span><span class="hot">Book Online</span>
+        <span>Most Insurance Accepted</span><span>Friendly Team</span><span>Modern Office</span>
+        <span>Easy Scheduling</span><span>Gentle Care</span><span>All Ages</span>
+      </div>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-top:2rem">
+        <a href="tel:9729661234" class="btn btn-mint">Book Today</a>
+        <a href="tel:9729661234" class="btn btn-ghost">(972) 966-1234</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="head reveal" style="text-align:center;max-width:none">
+      <span class="eyebrow" style="justify-content:center">What Patients Say</span>
+      <h2 style="margin-top:1rem">Comfortable care, from front office to chair.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="mark">&ldquo;</div><p>The team did a wonderful job on my father's teeth and on my cleaning — high standards from the front office all the way to the assistants.</p><cite>— Highland Village Patient</cite></div>
+      <div class="rev reveal"><div class="mark">&ldquo;</div><p>Very friendly and professional. They helped relieve my anxiety, which matters so much to me — I finally have a dentist I trust.</p><cite>— Verified Patient</cite></div>
+      <div class="rev reveal"><div class="mark">&ldquo;</div><p>Gentle, modern and easy from start to finish. Booking was simple and the whole family is now cared for in one place.</p><cite>— Local Family</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="section">
+  <div class="wrap">
+    <div class="band reveal">
+      <h2>Ready for a dentist you'll love?</h2>
+      <p>New patients are always welcome. Book online or call today — most insurance accepted, and gentle, comfortable care is always the standard.</p>
+      <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap">
+        <a href="tel:9729661234" class="btn btn-mint">Book Today</a>
+        <a href="tel:9729661234" class="btn btn-ghost">(972) 966-1234</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand">🦷 Dental Depot</div>
+        <p>Modern, gentle dentistry for the whole family in Highland Village, TX. General, cosmetic, implants, kids &amp; emergency care — with Dr. Himesh Kana, DMD.</p>
+      </div>
+      <div>
+        <small>Contact</small>
+        <a href="tel:9729661234" class="big">(972) 966-1234</a>
+        <a href="#new-patients">New Patients Welcome</a>
+        <a href="#">Highland Village, TX</a>
+      </div>
+      <div>
+        <small>Care</small>
+        <a href="#services">General &amp; Family Dentistry</a>
+        <a href="#services">Cosmetic &amp; Implants</a>
+        <a href="#services">Kids &amp; Emergency Care</a>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 Dental Depot · Dr. Himesh Kana, DMD · Highland Village, TX · Most Insurance Welcome.</span>
+      <span>Website concept by <a href="https://www.topshelfsolutions.io">Top Shelf</a> · Highland Village, TX · (972) 966-1234</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

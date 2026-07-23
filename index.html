@@ -8,46 +8,119 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0B0906;color:#CFC7B8;font-family:"Jost",sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;min-height:100vh}
-.wrap{max-width:1080px;margin:0 auto;padding:clamp(3rem,8vw,6rem) 1.5rem}
+.wrap{max-width:1200px;margin:0 auto;padding:clamp(3rem,8vw,6rem) 1.5rem}
 .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:#C9A24B;display:inline-flex;align-items:center;gap:.8rem;margin-bottom:1.4rem}
 .eyebrow::before{content:"";width:26px;height:1px;background:#C9A24B}
 h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;margin-bottom:1.2rem}
 h1 em{font-style:italic;color:#E4C98A}
-.sub{max-width:52ch;font-size:1.05rem;line-height:1.7;margin-bottom:3.5rem}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.sub{max-width:56ch;font-size:1.05rem;line-height:1.7;margin-bottom:3.5rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
 .card{display:block;border:1px solid rgba(201,162,75,.2);background:#100C08;border-radius:8px;overflow:hidden;transition:.35s cubic-bezier(.22,1,.36,1)}
 .card:hover{transform:translateY(-6px);border-color:#C9A24B}
 .card .thumb{aspect-ratio:16/10;background:#000 center/cover no-repeat}
-.card .body{padding:1.4rem 1.5rem 1.7rem}
-.card h3{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:1.5rem;margin-bottom:.3rem}
-.card .type{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#98907F;margin-bottom:.9rem}
-.card .go{font-size:.8rem;letter-spacing:.08em;color:#C9A24B}
+.card .body{padding:1.2rem 1.3rem 1.5rem}
+.card h3{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:1.4rem;margin-bottom:.2rem;line-height:1.1}
+.card .type{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#98907F;margin-bottom:.8rem}
+.card .go{font-size:.78rem;letter-spacing:.08em;color:#C9A24B}
 .foot{margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(201,162,75,.15);font-size:.8rem;color:#6E675A;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 .foot a{color:#C9A24B;text-decoration:none}
-@media(max-width:820px){.grid{grid-template-columns:1fr}}
+@media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <span class="eyebrow">Top Shelf Business Solutions</span>
   <h1>Website <em>concepts</em>, built for real businesses.</h1>
-  <p class="sub">A preview of custom website refreshes designed by Top Shelf — each one tailored to the business, its industry, and its customers. Explore the live concepts below.</p>
+  <p class="sub">A preview of custom website refreshes designed by Top Shelf — each tailored to the business, its industry, and its customers. Explore the 21 live concepts below.</p>
   <div class="grid">
     <a class="card" href="dfw-black-car/">
       <div class="thumb" style="background-image:url('dfw-black-car/assets/hero.jpg')"></div>
-      <div class="body"><div class="type">Luxury Transportation</div><h3>DFW Black Car &amp; Limo</h3><div class="go">View concept →</div></div>
+      <div class="body"><div class="type">Luxury Transportation</div><h3>DFW Black Car & Limo</h3><div class="go">View concept &rarr;</div></div>
     </a>
     <a class="card" href="canine-courtyard/">
       <div class="thumb" style="background-image:url('canine-courtyard/assets/hero.jpg')"></div>
-      <div class="body"><div class="type">Pet Care</div><h3>Canine Courtyard</h3><div class="go">View concept →</div></div>
+      <div class="body"><div class="type">Pet Care & Grooming</div><h3>Canine Courtyard</h3><div class="go">View concept &rarr;</div></div>
     </a>
     <a class="card" href="bear-air/">
       <div class="thumb" style="background-image:url('bear-air/assets/hero.jpg')"></div>
-      <div class="body"><div class="type">Home Services · HVAC</div><h3>Bear Air Services</h3><div class="go">View concept →</div></div>
+      <div class="body"><div class="type">HVAC · Home Services</div><h3>Bear Air Services</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="calvins-climate/">
+      <div class="thumb" style="background-image:url('calvins-climate/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">HVAC · Award-Winning</div><h3>Calvin's Climate</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="absolute-plumbing/">
+      <div class="thumb" style="background-image:url('absolute-plumbing/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Plumbing</div><h3>Absolute Plumbing</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="dfw-water-softeners/">
+      <div class="thumb" style="background-image:url('dfw-water-softeners/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Water Treatment</div><h3>DFW Water Softeners</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="anderson-lighting/">
+      <div class="thumb" style="background-image:url('anderson-lighting/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Electrical · Lighting</div><h3>Anderson Lighting & Electric</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="flower-mound-vehicle-repair/">
+      <div class="thumb" style="background-image:url('flower-mound-vehicle-repair/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Auto Repair</div><h3>Flower Mound Vehicle Repair</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="gerber-collision/">
+      <div class="thumb" style="background-image:url('gerber-collision/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Auto Body</div><h3>Gerber Collision & Glass</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="awdtuning/">
+      <div class="thumb" style="background-image:url('awdtuning/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Performance Auto</div><h3>AWDTuning</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="crossfit-flower-mound/">
+      <div class="thumb" style="background-image:url('crossfit-flower-mound/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Fitness</div><h3>CrossFit Flower Mound</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="s-l-designs/">
+      <div class="thumb" style="background-image:url('s-l-designs/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Custom Furniture & Metal</div><h3>S&amp;L Designs</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="ccm-engineering/">
+      <div class="thumb" style="background-image:url('ccm-engineering/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Structural Engineering</div><h3>CCM Engineering</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="budget-blinds/">
+      <div class="thumb" style="background-image:url('budget-blinds/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Window Treatments</div><h3>Budget Blinds</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="sip-stir-coffee/">
+      <div class="thumb" style="background-image:url('sip-stir-coffee/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Coffee Shop</div><h3>Sip Stir Coffee House</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="southern-glow/">
+      <div class="thumb" style="background-image:url('southern-glow/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Tanning & Beauty</div><h3>Southern Glow</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="cheer-dental/">
+      <div class="thumb" style="background-image:url('cheer-dental/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Dentistry</div><h3>Cheer Dental</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="dental-depot/">
+      <div class="thumb" style="background-image:url('dental-depot/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Dentistry</div><h3>Dental Depot</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="massage-life-center/">
+      <div class="thumb" style="background-image:url('massage-life-center/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Spa & Massage</div><h3>Massage Life Center</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="texas-massage-health/">
+      <div class="thumb" style="background-image:url('texas-massage-health/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Clinical Massage</div><h3>Texas Massage Health & Recovery</h3><div class="go">View concept &rarr;</div></div>
+    </a>
+    <a class="card" href="woodhouse-spa/">
+      <div class="thumb" style="background-image:url('woodhouse-spa/assets/hero.jpg')"></div>
+      <div class="body"><div class="type">Day Spa</div><h3>Woodhouse Spa</h3><div class="go">View concept &rarr;</div></div>
     </a>
   </div>
   <div class="foot">
-    <span>© 2026 Top Shelf Business Solutions · Concept demos</span>
+    <span>&copy; 2026 Top Shelf Business Solutions &middot; Concept demos</span>
     <a href="https://www.topshelfsolutions.io">www.topshelfsolutions.io</a>
   </div>
 </div>
