@@ -1,33 +1,50 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex,nofollow">
-<title>Top Shelf - Deliverable Previews</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
+<title>Top Shelf - 21 Deliverables</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0B0906;color:#CFC7B8;font-family:"Jost",sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;min-height:100vh}
+body{background:#0B0906;color:#CFC7B8;font-family:"Jost",sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
 .wrap{max-width:840px;margin:0 auto;padding:clamp(2rem,7vw,4rem) 1.1rem 4rem}
-.eyebrow{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:#C9A24B;display:inline-flex;align-items:center;gap:.7rem;margin-bottom:1.1rem}
-.eyebrow::before{content:"";width:22px;height:1px;background:#C9A24B}
-h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:clamp(2rem,7vw,3.1rem);line-height:1.06;margin-bottom:.8rem}
+.eyebrow{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:#C9A24B;margin-bottom:1rem;display:block}
+h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:clamp(2rem,7vw,3.1rem);line-height:1.06;margin-bottom:.7rem}
 h1 em{font-style:italic;color:#E4C98A}
-.sub{max-width:52ch;font-size:1rem;line-height:1.65;margin-bottom:2.6rem;color:#98907F}
-.card{display:block;border:1px solid rgba(201,162,75,.22);background:#100C08;border-radius:10px;padding:1.15rem 1.25rem;margin-bottom:.9rem;text-decoration:none;transition:.3s cubic-bezier(.22,1,.36,1)}
-.card:hover,.card:active{border-color:#C9A24B;transform:translateY(-2px)}
-.card .type{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:#98907F;margin-bottom:.35rem}
-.card h3{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:1.5rem;line-height:1.1}
-.card .go{font-size:.76rem;letter-spacing:.06em;color:#C9A24B;margin-top:.5rem}
-.back{display:inline-block;font-size:.76rem;letter-spacing:.08em;color:#C9A24B;text-decoration:none;margin-bottom:1.4rem}
+.sub{max-width:54ch;font-size:1rem;line-height:1.6;margin-bottom:2.4rem;color:#98907F}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card{display:block;border:1px solid rgba(201,162,75,.2);background:#100C08;border-radius:10px;overflow:hidden;text-decoration:none;transition:.3s cubic-bezier(.22,1,.36,1)}
+.card:hover,.card:active{border-color:#C9A24B;transform:translateY(-3px)}
+.card .thumb{aspect-ratio:8.5/11;background:#000 center/cover no-repeat;border-bottom:1px solid rgba(201,162,75,.14)}
+.card .body{padding:.85rem .95rem 1.05rem}
+.card .type{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#98907F;margin-bottom:.3rem;line-height:1.3}
+.card h3{font-family:"Cormorant Garamond",serif;font-weight:600;color:#F4F0E8;font-size:1.2rem;line-height:1.12}
+.back{display:inline-block;font-size:.76rem;letter-spacing:.08em;color:#C9A24B;text-decoration:none;margin-bottom:1.3rem}
 .pages img{width:100%;height:auto;display:block;border:1px solid rgba(201,162,75,.14);border-radius:8px;margin-bottom:1rem;box-shadow:0 14px 40px rgba(0,0,0,.5)}
-.dl{display:inline-block;margin:.4rem 0 2rem;padding:.7rem 1.4rem;border:1px solid #C9A24B;border-radius:999px;color:#E4C98A;text-decoration:none;font-size:.82rem;letter-spacing:.06em}
+.dl{display:inline-block;margin:.3rem 0 1.8rem;padding:.7rem 1.4rem;border:1px solid #C9A24B;border-radius:999px;color:#E4C98A;text-decoration:none;font-size:.82rem;letter-spacing:.06em}
 .dl:hover{background:#C9A24B;color:#0B0906}
-.divider{margin:1.4rem 0 1.1rem;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#6E675A;display:flex;align-items:center;gap:.8rem}
-.divider::before,.divider::after{content:"";flex:1;height:1px;background:rgba(201,162,75,.18)}
-.foot{margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid rgba(201,162,75,.15);font-size:.74rem;color:#6E675A;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+.foot{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid rgba(201,162,75,.15);font-size:.74rem;color:#6E675A;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
 .foot a{color:#C9A24B;text-decoration:none}
+@media(max-width:520px){.grid{grid-template-columns:1fr 1fr}.card h3{font-size:1.05rem}}
 </style></head><body><div class="wrap">
-<span class="eyebrow">Top Shelf Business Solutions</span><h1>Deliverable <em>previews</em></h1><p class="sub">Three sample deliverables: the SEO + Google audit and the Solutions proposal, each fronted by a cover, merged into one document. Tap any to read it or download the PDF.</p><a class="card" href="03_Canine-Courtyard.html"><div class="type">Audit + Solutions &middot; Dog daycare, boarding &amp; grooming</div><h3>Canine Courtyard</h3><div class="go">View deliverable &rarr;</div></a>
-<a class="card" href="11_Absolute-Plumbing.html"><div class="type">Audit + Solutions &middot; Plumbing &amp; drain services</div><h3>Absolute Plumbing</h3><div class="go">View deliverable &rarr;</div></a>
-<a class="card" href="13_Budget-Blinds.html"><div class="type">Audit + Solutions &middot; Window treatments &middot; franchise</div><h3>Budget Blinds of Flower Mound</h3><div class="go">View deliverable &rarr;</div></a>
-<div class="foot"><span>&copy; 2026 Top Shelf Business Solutions &middot; Deliverable previews</span>
-<a href="https://www.topshelfsolutions.io">www.topshelfsolutions.io</a></div></div></body></html>
+<span class="eyebrow">Top Shelf Business Solutions</span><h1>Prospect <em>deliverables</em></h1><p class="sub">All 21 combined Audit + Solutions documents — each fronted by a cover, the SEO + Google audit, then the tailored Solutions proposal. Tap any to read it or download the PDF.</p><div class="grid"><a class="card" href="01_SL-Designs.html"><div class="thumb" style="background-image:url('01_SL-Designs/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>S&L Designs</h3></div></a>
+<a class="card" href="02_FlowerMound-Vehicle-Repair.html"><div class="thumb" style="background-image:url('02_FlowerMound-Vehicle-Repair/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Flower Mound Vehicle Repair</h3></div></a>
+<a class="card" href="03_Canine-Courtyard.html"><div class="thumb" style="background-image:url('03_Canine-Courtyard/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Canine Courtyard Flower Mound</h3></div></a>
+<a class="card" href="04_Gerber-Collision.html"><div class="thumb" style="background-image:url('04_Gerber-Collision/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Gerber Collision & Glass</h3></div></a>
+<a class="card" href="05_Bear-Air-Services.html"><div class="thumb" style="background-image:url('05_Bear-Air-Services/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Bear Air Services</h3></div></a>
+<a class="card" href="06_DFW-Black-Car.html"><div class="thumb" style="background-image:url('06_DFW-Black-Car/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>DFW Black Car and Limo</h3></div></a>
+<a class="card" href="07_AWD-Tuning.html"><div class="thumb" style="background-image:url('07_AWD-Tuning/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>AWDTuning</h3></div></a>
+<a class="card" href="08_CrossFit-Flower-Mound.html"><div class="thumb" style="background-image:url('08_CrossFit-Flower-Mound/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>CrossFit Flower Mound</h3></div></a>
+<a class="card" href="09_Anderson-Lighting-Electric.html"><div class="thumb" style="background-image:url('09_Anderson-Lighting-Electric/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Anderson Lighting & Electric</h3></div></a>
+<a class="card" href="10_Calvins-Climate.html"><div class="thumb" style="background-image:url('10_Calvins-Climate/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Calvin's Climate Solutions</h3></div></a>
+<a class="card" href="11_Absolute-Plumbing.html"><div class="thumb" style="background-image:url('11_Absolute-Plumbing/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Absolute Plumbing</h3></div></a>
+<a class="card" href="12_DFW-Water-Softeners.html"><div class="thumb" style="background-image:url('12_DFW-Water-Softeners/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>DFW Water Softeners</h3></div></a>
+<a class="card" href="13_Budget-Blinds.html"><div class="thumb" style="background-image:url('13_Budget-Blinds/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Budget Blinds of Flower Mound</h3></div></a>
+<a class="card" href="14_CCM-Engineering.html"><div class="thumb" style="background-image:url('14_CCM-Engineering/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>CCM Engineering (Crannell Engineering)</h3></div></a>
+<a class="card" href="15_Sip-Stir-Coffee.html"><div class="thumb" style="background-image:url('15_Sip-Stir-Coffee/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Sip Stir Coffee House</h3></div></a>
+<a class="card" href="16_Southern-Glow.html"><div class="thumb" style="background-image:url('16_Southern-Glow/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Southern Glow Airbrush Tanning</h3></div></a>
+<a class="card" href="17_Cheer-Dental.html"><div class="thumb" style="background-image:url('17_Cheer-Dental/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Cheer Dental</h3></div></a>
+<a class="card" href="18_Dental-Depot-Kana.html"><div class="thumb" style="background-image:url('18_Dental-Depot-Kana/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Dental Depot — Himesh Kana, DMD</h3></div></a>
+<a class="card" href="19_Massage-Life-Center.html"><div class="thumb" style="background-image:url('19_Massage-Life-Center/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Massage Life Center</h3></div></a>
+<a class="card" href="20_Texas-Massage-Health.html"><div class="thumb" style="background-image:url('20_Texas-Massage-Health/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>Texas Massage Health and Recovery</h3></div></a>
+<a class="card" href="21_Woodhouse-Spa.html"><div class="thumb" style="background-image:url('21_Woodhouse-Spa/p1.jpg?v=9')"></div><div class="body"><div class="type">Audit + Solutions</div><h3>The Woodhouse Spa — Highland Village</h3></div></a>
+</div><div class="foot"><span>&copy; 2026 Top Shelf Business Solutions &middot; Deliverable previews</span>
+<a href="cover-options/">Cover options</a></div></div></body></html>
